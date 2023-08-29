@@ -27,20 +27,15 @@ const Header = () => {
                     <span className="lines" />
                 </div>
                 <div className={isActive ? 'mobile-nav active' : 'mobile-nav'}>
-                    <a href="/" className="logo-main">
-                        <img
-                            src="images/logo.png"
-                            alt="*"
-                            style={{ filter: "hue-rotate(45deg)" }}
-                        />
-                    </a>
+
+                    <Link href='/'>
+                        <Image
+                            src="/images/logo.png" alt="Strugle" width={280} height={100} priority />
+                    </Link>
                     <nav>
                         <ul className="unstyled mainnav pbpx-15">
                             <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="about-us/">About Us</a>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
                                 <a href="javascript:;" className={isActiveService ? 'active' : ''} onClick={handleClickServices}>
@@ -48,59 +43,60 @@ const Header = () => {
                                 </a>
                                 <ul className={isActiveService ? 'firstlevel unstyled active' : 'firstlevel unstyled'}>
                                     <li>
-                                        <a href="ghost-writing/">Ghost Writing</a>
+                                        <Link href="ghost-writing">Ghost Writing</Link>
                                     </li>
                                     <li>
-                                        <a href="editing/">Editing</a>
+                                        <Link href="editing">Editing</Link>
                                     </li>
                                     <li>
-                                        <a href="publishing/">Publishing</a>
+                                        <Link href="publishing">Publishing</Link>
                                     </li>
                                     <li>
-                                        <a href="proofreading/">Proofreading</a>
+                                        <Link href="proofreading">Proofreading</Link>
                                     </li>
                                     <li>
-                                        <a href="audio-book/">Audio Book</a>
-                                    </li>
-                                    {/* <li><a href="book-">Book </a></li> */}
-                                    <li>
-                                        <a href="book-cover/">Book Cover</a>
+                                        <Link href="audio-book">Audio Book</Link>
                                     </li>
                                     <li>
-                                        <a href="book-marketing/">Book Marketing</a>
+                                        <Link href="book-cover">Book Cover</Link>
                                     </li>
                                     <li>
-                                        <a href="formatting/">Formatting</a>
+                                        <Link href="book-marketing">Book Marketing</Link>
                                     </li>
                                     <li>
-                                        <a href="e-book-writing/">e-Book Writing</a>
+                                        <Link href="formatting">Formatting</Link>
                                     </li>
                                     <li>
-                                        <a href="blog-writing/">Blog Writing</a>
+                                        <Link href="e-book-writing">E-Book Writing</Link>
                                     </li>
                                     <li>
-                                        <a href="website-content-writing/">Website Content Writing</a>
+                                        <Link href="blog-writing">Blog Writing</Link>
                                     </li>
                                     <li>
-                                        <a href="article-writing/">Article Writing</a>
+                                        <Link href="website-content-writing">Website Content Writing</Link>
                                     </li>
                                     <li>
-                                        <a href="book-video-trailer/">Book Video Trailer</a>
+                                        <Link href="article-writing">Article Writing</Link>
                                     </li>
                                     <li>
-                                        <a href="author-website/">Author Website</a>
+                                        <Link href="book-video-trailer">Book Video Trailer</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="author-website">Author Website</Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="case-studies.php">Case Studies</a>
-                            </li>
-                            {/* <li><a href="pricing/">Pricing</a></li> */}
-                            <li>
-                                <a href="testimonials.php">Testimonials</a>
+                                <Link href="case-studies">Case Studies</Link>
                             </li>
                             <li>
-                                <a href="contact-us.php">Contact Us</a>
+                                <Link href="testimonials">Testimonials</Link>
+                            </li>
+                            <li>
+                                <Link href="faq">Faq's</Link>
+                            </li>
+                            <li>
+                                <Link href="contact">Contact</Link>
                             </li>
                         </ul>
                     </nav>
