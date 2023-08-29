@@ -14,12 +14,10 @@ config.autoAddCss = false;
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Script
-        src="https://static.zdassets.com/ekr/snippet.js?key=f081cf71-6296-44b5-9b54-ee7d398318cf"
-        onLoad={() => {
-          console.log('Script has loaded')
-        }}
-      />
+
+
+      <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f081cf71-6296-44b5-9b54-ee7d398318cf" />
+
       <Head>
 
 
