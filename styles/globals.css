@@ -18103,3 +18103,7 @@ section.cta-book ul {
 form.form_submission p {
   padding: 0;
 }
+
+.bannerform-heading p {
+  line-height: 50px;
+}

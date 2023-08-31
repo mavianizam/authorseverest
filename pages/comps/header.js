@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import ChatBtn from "./chatbtn";
 
 
 
@@ -377,7 +378,7 @@ const Header = () => {
                                                 </li>
 
                                                 <li className="chat num" >
-                                                    <a href="javascript:;">Live Chat</a>
+                                                    <ChatBtn />
                                                 </li>
                                             </ul>
                                         </div>
