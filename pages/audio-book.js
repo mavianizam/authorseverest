@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Audio = () => {
     return (
@@ -23,7 +24,7 @@ const Audio = () => {
                                         <div className="home-banner-content home-align">
                                             <p className="subtitle">Audiobook Production Services</p>
                                             <h1 style={{ color: "#fff" }}>
-                                                Best Audiobook Services to Breathe Life into your Book{" "}
+                                                Best Audiobook Services to Breathe Life into your Book
                                             </h1>
                                             <span>
                                                 Looking for an audiobook service that's both easy on the
@@ -37,49 +38,11 @@ const Audio = () => {
                                                 start exploring the wonderful world of cheap audio books
                                                 with the best audiobook service out there!
                                             </span>
-                                            <Cta />
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
-                                        </div>
+
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
                                         <div className="banner-form">
@@ -93,57 +56,16 @@ const Audio = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-self-center">
@@ -155,14 +77,14 @@ const Audio = () => {
                                 <p className="main-para">
                                     With a track record of hundreds of successful audiobook
                                     productions under our belt, we're confident in proclaiming
-                                    ourselves as one of the top audiobook production companies around.{" "}
+                                    ourselves as one of the top audiobook production companies around.
                                     <br /> But don't just take our word for it - our reputation
                                     precedes us. As a go-to agency for the creation and distribution
                                     of the best business audiobooks, we've established ourselves as a
                                     trusted partner for authors looking to elevate their written works
                                     into immersive, engaging listening experiences. From iTunes to
                                     Audible and everywhere in between, we've got the expertise and
-                                    know-how to get your audiobook heard by audiences worldwide.{" "}
+                                    know-how to get your audiobook heard by audiences worldwide.
                                 </p>
                                 <ul>
                                     <li>• Impeccable Audio Quality</li>
@@ -187,11 +109,13 @@ const Audio = () => {
                                 <h6>
                                     Why Settle For Second-Best When You Can Work With The Top One?
                                 </h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Choose Authors Everest for Your Next Audiobook Project and See the
                                     Difference for Yourself
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -257,7 +181,7 @@ const Audio = () => {
                                             pride in our work. With our quality guarantee, you can trust
                                             that we'll produce the most exceptional audiobooks for you.
                                             Plus, our services are affordable, making us the perfect
-                                            choice for those in search of the <b>cheapest audiobooks</b>{" "}
+                                            choice for those in search of the <b>cheapest audiobooks</b>
                                             without compromising on quality.
                                         </p>
                                     </div>
@@ -289,7 +213,7 @@ const Audio = () => {
                                     <div className="rht">
                                         <h3>Ghostwriting</h3>
                                         <p>
-                                            Whether you are looking for the{" "}
+                                            Whether you are looking for the
                                             <a href="ghost-writing/"> best ghostwriting services</a> or
                                             need <a href="e-book-writing"> eBook writing services</a>, we
                                             have you covered.
@@ -311,8 +235,8 @@ const Audio = () => {
                                         <h3>Publishing </h3>
                                         <p>
                                             As a <a href="publishing/"> top self publishing company</a>,
-                                            we publish your book and provide you{" "}
-                                            <a href="book-marketing/"> self publish book marketing</a>{" "}
+                                            we publish your book and provide you
+                                            <a href="book-marketing/"> self publish book marketing</a>
                                             services.
                                         </p>
                                     </div>
@@ -351,7 +275,7 @@ const Audio = () => {
                                     <div className="rht">
                                         <h3>Proofreading</h3>
                                         <p>
-                                            Our <a href="proofreading/"> best proofreading services</a>{" "}
+                                            Our <a href="proofreading/"> best proofreading services</a>
                                             make your documents flawless by ensuring they are free from
                                             errors, typos, and grammar mistakes.
                                         </p>
@@ -372,8 +296,8 @@ const Audio = () => {
                                         <h3>Book Cover </h3>
                                         <p>
                                             Suppose you need an attractive book cover that can attract
-                                            buyers. In that case, our menu of{" "}
-                                            <a href="book-cover/"> professional book cover design</a>{" "}
+                                            buyers. In that case, our menu of
+                                            <a href="book-cover/"> professional book cover design</a>
                                             services are your best choice.
                                         </p>
                                     </div>
@@ -398,7 +322,7 @@ const Audio = () => {
                                 professional narrators work tirelessly to capture the author's voice
                                 and bring their story to life, making it a truly captivating and
                                 unforgettable listening experience. With our professional audiobook
-                                assistance, you can get:{" "}
+                                assistance, you can get:
                             </p>
                             <ul>
                                 <li>• Selection from a broad range of genres.</li>
@@ -414,16 +338,9 @@ const Audio = () => {
                                 stories come alive through solid voices.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    {" "}
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -499,7 +416,7 @@ const Audio = () => {
                             <div className="approach-inner">
                                 <span className="approach-title">Quality Assurance </span>
                                 <div className="approach-content">
-                                    {" "}
+
                                     We review the audiobook in its entirety to ensure that it meets
                                     our high standards for quality. We work with the client to make
                                     any necessary revisions.
@@ -540,7 +457,7 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Self-Help
                                         </h4>
                                         <p>
@@ -558,7 +475,7 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Business
                                         </h4>
                                         <p>
@@ -576,7 +493,7 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Comedy
                                         </h4>
                                         <p>
@@ -599,8 +516,8 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
-                                            <br /> Science Fiction{" "}
+
+                                            <br /> Science Fiction
                                         </h4>
                                         <p>
                                             One of our specialties is the best science fiction audiobooks.
@@ -616,7 +533,7 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Graphic
                                         </h4>
                                         <p>
@@ -634,7 +551,7 @@ const Audio = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Autobiographies
                                         </h4>
                                         <p>

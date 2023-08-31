@@ -14,6 +14,10 @@ const BannerForm = () => {
     const [Comments, setComments] = useState('');
 
     function ContactSubmit() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'block';
+
+
 
         fetch("https://formsubmit.co/ajax/harrydev96@gmail.com", {
             method: "POST",
@@ -32,6 +36,7 @@ const BannerForm = () => {
             })
         })
             .then(function (response) {
+                loader.style.display = 'none';
                 const element = document.getElementById('yourElementId');
 
                 if (element) {
@@ -120,7 +125,7 @@ const BannerForm = () => {
                             <p>Thank you for filling out your information!</p>
                         </div>
                         <div
-                            className="loader"
+                            className="loader" id="loader"
                             style={{ display: "none" }}
                         >
                             <img

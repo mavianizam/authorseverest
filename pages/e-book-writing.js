@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const EBook = () => {
     return (
@@ -31,7 +32,7 @@ const EBook = () => {
                                             <span>
                                                 Get set to transform your ideas into a compelling eBook that
                                                 readers will love. Our professional writers and editors are
-                                                ready to assist you. We provide unmatched{" "}
+                                                ready to assist you. We provide unmatched
                                                 <b>eBook writing services,</b> giving life to your ideas
                                                 through everything from professionally researched
                                                 non-fiction to gripping fictional stories.
@@ -40,48 +41,9 @@ const EBook = () => {
                                                 the world and create an eBook that will set you apart from
                                                 the crowd.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -96,56 +58,14 @@ const EBook = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section className="main-cmplete-sec">
                 <div className="container">
@@ -185,11 +105,13 @@ const EBook = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Are You Ready To Take Your EBook To The Next Level?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Our EBook Editing Service Will Help You Polish Your Book And
                                     Ensure That It Is Error-Free And Ready For Publication.
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -264,7 +186,7 @@ const EBook = () => {
                                     <div className="txt-wrap">
                                         <h4>Audience-Oriented Writing</h4>
                                         <p>
-                                            Our <a href="ghost-writing/"> best ghostwriting services</a>{" "}
+                                            Our <a href="ghost-writing/"> best ghostwriting services</a>
                                             ensure that your eBook resonates with your target audience. We
                                             focus on creating content that engages, informs, and
                                             entertains your readers.
@@ -295,7 +217,7 @@ const EBook = () => {
                                     <div className="txt-wrap">
                                         <h4>Proofreading and Editing Services</h4>
                                         <p>
-                                            We provide the{" "}
+                                            We provide the
                                             <a href="proofreading/"> best proofreading services</a> to
                                             ensure your eBook is error-free and polished. Our editors will
                                             review your content thoroughly to ensure it is ready for
@@ -325,23 +247,23 @@ const EBook = () => {
                                 <li>• Professionally written eBook</li>
                                 <li>• Qualified and experienced eBook writers.</li>
                                 <li>
-                                    •{" "}
+                                    •
                                     <a href="website-content-writing/">
-                                        {" "}
+
                                         Unique content writing services
                                     </a>
                                     .
                                 </li>
                                 <li>
-                                    • <a href="blog-writing/"> Professional blog writing services</a>.{" "}
+                                    • <a href="blog-writing/"> Professional blog writing services</a>.
                                 </li>
                                 <li>
                                     • <a href="author-website/"> Author website design services</a>.
                                 </li>
                                 <li>
-                                    •{" "}
+                                    •
                                     <a href="article-writing/">
-                                        {" "}
+
                                         Professional article writing services
                                     </a>
                                     .
@@ -355,15 +277,9 @@ const EBook = () => {
                                 readers!
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

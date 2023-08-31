@@ -1,10 +1,5 @@
-import Accordion from "./comps/accordion";
-import { useRouter } from 'next/router';
-
 const Case = () => {
-    const { asPath } = useRouter();
-    var page_name = asPath
-    console.log(page_name);
+
     return (
         <>
             <section className="main-cmplete-sec mt-5">

@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const WebsiteContent = () => {
     return (
@@ -41,48 +42,9 @@ const WebsiteContent = () => {
                                                 all sizes to access the best content writing services in the
                                                 USA.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -97,56 +59,14 @@ const WebsiteContent = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section className="main-cmplete-sec">
                 <div className="container">
@@ -188,11 +108,13 @@ const WebsiteContent = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Want to Dominate the Online World?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Unleash The Power Of Words And Convert Your Prospects Into
                                     Customers With The Help Of Our Web Content Writers!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -206,7 +128,7 @@ const WebsiteContent = () => {
                                 <span className="urach">Why Choose Us?</span>
                                 <h2 className="main-heading">
                                     We Satisfy Your Cravings For Exceptional Quality And Effectiveness
-                                    In Engaging Your Target Audience.{" "}
+                                    In Engaging Your Target Audience.
                                 </h2>
                             </div>
                         </div>
@@ -332,7 +254,7 @@ const WebsiteContent = () => {
                         <div className="approach-item">
                             <div className="approach-inner">
                                 <span className="approach-title">
-                                    Understanding Your Business and Audience{" "}
+                                    Understanding Your Business and Audience
                                 </span>
                                 <div className="approach-content">
                                     We start by getting to know your business and your target
@@ -412,8 +334,8 @@ const WebsiteContent = () => {
                                     <div className="rht">
                                         <h3>Ghostwriting </h3>
                                         <p>
-                                            Our company specializes in providing you with the{" "}
-                                            <a href="ghost-writing/"> best ghostwriting services</a> and{" "}
+                                            Our company specializes in providing you with the
+                                            <a href="ghost-writing/"> best ghostwriting services</a> and
                                             <a href="e-book-writing/"> eBook writing services</a> to help
                                             you transform your ideas into reality.
                                         </p>
@@ -453,8 +375,8 @@ const WebsiteContent = () => {
                                     <div className="rht">
                                         <h3>Author Website</h3>
                                         <p>
-                                            We provide cheap{" "}
-                                            <a href="author-website/"> author website design services</a>{" "}
+                                            We provide cheap
+                                            <a href="author-website/"> author website design services</a>
                                             to help authors establish a solid online presence and connect
                                             with their readers.
                                         </p>
@@ -474,12 +396,12 @@ const WebsiteContent = () => {
                                     <div className="rht">
                                         <h3>Article Writing</h3>
                                         <p>
-                                            Our team of experienced writers offers{" "}
+                                            Our team of experienced writers offers
                                             <a href="article-writing/">
-                                                {" "}
+
                                                 professional article writing services
-                                            </a>{" "}
-                                            and the{" "}
+                                            </a>
+                                            and the
                                             <a href="proofreading/"> best proofreading services</a>. We
                                             ensure your content is engaging, informative, and tailored to
                                             your target audience.
@@ -501,8 +423,8 @@ const WebsiteContent = () => {
                                         <h3>Book Trailer</h3>
                                         <p>
                                             We help you capture your readers' attention with our
-                                            high-quality{" "}
-                                            <a href="video-book-trailer/"> video book trailers</a>{" "}
+                                            high-quality
+                                            <a href="video-book-trailer/"> video book trailers</a>
                                             services, showcasing the essence of your story and building
                                             anticipation for your book.
                                         </p>
@@ -533,15 +455,9 @@ const WebsiteContent = () => {
                                 level by writing website copy that produces results.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

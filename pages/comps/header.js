@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 
 
@@ -26,7 +27,65 @@ const Header = () => {
     }
 
 
+    const { asPath } = useRouter();
 
+    const [Domain, setDomain] = useState('www.authorseverest.com');
+    const [Page, setPage] = useState('https://authorseverest.com' + asPath);
+    const [Subject, setSubject] = useState('Popup Form');
+    const [Name, setName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Phone, setPhone] = useState('');
+    const [Comments, setComments] = useState('');
+
+    function ContactSubmit() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'block';
+
+
+
+        fetch("https://formsubmit.co/ajax/harrydev96@gmail.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                Domain: Domain,
+                Page: Page,
+                Subject: Subject,
+                Name: Name,
+                Email: Email,
+                Phone: Phone,
+                Comments: Comments,
+            })
+        })
+            .then(function (response) {
+                loader.style.display = 'none';
+                const element = document.getElementById('yourElementId');
+                const formpopup = document.getElementById('ys-container');
+
+                if (element) {
+                    // Change the display property to "block"
+                    element.style.display = 'block';
+                    setName('');
+                    setEmail('');
+                    setPhone('');
+                    setComments('');
+                }
+
+                setTimeout(() => {
+                    element.style.display = 'none';
+                    ys_container.style.display = 'none';
+                }, 2000);
+
+            })
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+
+
+    }
+
+    const [showChat, setShowChat] = useState(false);
     return (
         <>
             <div
@@ -34,7 +93,7 @@ const Header = () => {
                 style={{
                     display: showPopup ? "none " : "block"
                 }}
-                id="ys-container"
+                id="ys_container"
             >
                 <div className="ys-box">
                     <a className="popup-close ys-popup-close ys-exit" href="#" onClick={toggle}>
@@ -51,26 +110,8 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="col-lg-12">
-                                <form
-                                    className="ordernow-form telsubmit form_submission"
-                                    method="POST"
-                                    action="https://formsubmit.co/harrydev96@gmail.com"
-                                >
-                                    <input
-                                        type="hidden"
-                                        name="url"
-                                        defaultValue="https://www.authorseverest.com/"
-                                    />
-                                    <input
-                                        type="hidden"
-                                        name="domain"
-                                        defaultValue="www.authorseverest.com"
-                                    />
-                                    <input
-                                        type="hidden"
-                                        name="subject"
-                                        defaultValue="Popup Form (www.authorseverest.com)"
-                                    />
+                                <form className="ordernow-form telsubmit form_submission">
+
                                     <div className="col-sm-12 form-group form-icon">
                                         <div className="row">
                                             <div className="col-sm-12">
@@ -78,62 +119,49 @@ const Header = () => {
                                                     className="alert alert-danger error"
                                                     style={{ display: "none" }}
                                                 />
-                                                <input
-                                                    required=""
-                                                    type="text"
-                                                    name="Name"
+                                                <input type="text"
+                                                    value={Name}
+                                                    onChange={e => { setName(e.currentTarget.value); }}
                                                     className="popup-field"
-                                                    placeholder="Your Name"
-                                                />
+                                                    placeholder="Enter Your Name *"
+                                                    required="" />
                                             </div>
                                             <div className="col-sm-12">
-                                                <input
-                                                    required=""
-                                                    type="email"
-                                                    name="Email"
-                                                    placeholder="Email Address"
+                                                <input type="email"
+                                                    value={Email}
+                                                    onChange={e => { setEmail(e.currentTarget.value); }}
                                                     className="popup-field"
-                                                />
+                                                    placeholder="Enter email here *"
+                                                    required="" />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-sm-12">
                                                 <input
-                                                    required=""
-                                                    type="text"
-                                                    name="Phone"
-                                                    className="number phone-country popup-field masking contact"
-                                                    placeholder="Enter Phone Here"
-                                                />
-                                                <span
-                                                    className="bg-danger col-lg-offset-3 contact_error "
-                                                    style={{ display: "none" }}
-                                                >
-                                                    Contact No Incorrect
-                                                </span>
+                                                    type="number"
+                                                    value={Phone}
+                                                    onChange={e => { setPhone(e.currentTarget.value); }}
+                                                    className="popup-field"
+                                                    placeholder="Enter number here *"
+                                                    required="" />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-sm-12">
                                                 <input
-                                                    required=""
-                                                    type="text"
-                                                    name="Description"
-                                                    placeholder="Description"
-                                                    className="popup-field brief-mt3"
+                                                    className="popup-field"
+                                                    value={Comments}
+                                                    onChange={e => { setComments(e.currentTarget.value); }}
+                                                    placeholder="Enter message here"
+                                                    defaultValue={""}
                                                 />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-sm-12">
                                                 {/* <input type="submit" onclick="free_cons_form_validate1()" value="Order Now" class="primary-btn green-btn"> */}
-                                                <button
-                                                    type="submit"
-                                                    value="Order Now"
-                                                    className="btn-style-2 formbtn"
-                                                >
-                                                    Submit
-                                                </button>
+                                                <button className="btn-style-2 formbtn" name="submit" type="button" onClick={ContactSubmit}>Submit</button>
+
                                             </div>
                                             <div className="col-md-12 col-xs-12">
                                                 <div
@@ -141,11 +169,19 @@ const Header = () => {
                                                     style={{ display: "none" }}
                                                 />
                                                 <div
-                                                    className="success mt-3 alert alert-success text-center mb-0 p-2"
+                                                    className="success mt-3 alert alert-success text-center mb-0 p-2" id="yourElementId"
+                                                    style={{ display: "none" }}>
+                                                    <p>Thank you for filling out your information!</p>
+                                                </div>
+                                                <div
+                                                    className="loader" id="loader"
                                                     style={{ display: "none" }}
-                                                />
-                                                <div className="loader" style={{ display: "none" }}>
-                                                    <img alt="loader" src="images/loader.gif" />
+                                                >
+                                                    <img
+                                                        alt="loader"
+                                                        src="images/loader.gif"
+                                                        className="img-fluid"
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
@@ -158,7 +194,7 @@ const Header = () => {
                 {/* <img class="element element-22" src="images/8.jpg" /> */}
                 {/* <img class="element element-23" src="assets/images/element-14.png" />
   <img class="element element-24" src="assets/images/element-11.png" /> */}
-            </div>
+            </div >
 
             <main className={isActive ? 'app-container active' : 'app-container'}>
                 <div className={isActive ? 'mobile-nav-btn active' : 'mobile-nav-btn'} onClick={handleClick}>
@@ -177,7 +213,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href="javascript:;" className={isActiveService ? 'active' : ''} onClick={handleClickServices}>
-                                    Services
+                                    Services <span className="arrow-down"> ⌄</span>
                                 </a>
                                 <ul className={isActiveService ? 'firstlevel unstyled active' : 'firstlevel unstyled'}>
                                     <li>
@@ -260,7 +296,7 @@ const Header = () => {
                                             </li>
                                             <li className="inract active">
                                                 <a>
-                                                    Services <i className="xicon icon-angle-down" />
+                                                    Services<i className="xicon icon-angle-down" />
                                                 </a>
                                                 <div className="dropdown">
                                                     <ul>
@@ -340,7 +376,7 @@ const Header = () => {
                                                     <Link href="get-a-quote" className="btn-main">Get a Quote</Link>
                                                 </li>
 
-                                                <li className="chat num">
+                                                <li className="chat num" >
                                                     <a href="javascript:;">Live Chat</a>
                                                 </li>
                                             </ul>

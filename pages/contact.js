@@ -11,6 +11,9 @@ const Contact = () => {
 
     function ContactSubmit() {
 
+        const loaderc = document.getElementById('loaderc');
+        loaderc.style.display = 'block';
+
         fetch("https://formsubmit.co/ajax/harrydev96@gmail.com", {
             method: "POST",
             headers: {
@@ -27,16 +30,20 @@ const Contact = () => {
             })
         })
             .then(function (response) {
-                const element = document.getElementById('yourElementId');
+                loaderc.style.display = 'none';
+                const elementc = document.getElementById('yourElementIdc');
 
-                if (element) {
+                if (elementc) {
                     // Change the display property to "block"
-                    element.style.display = 'block';
+                    elementc.style.display = 'block';
                     setName('');
                     setEmail('');
                     setPhone('');
                     setComments('');
                 }
+                setTimeout(() => {
+                    elementc.style.display = 'none';
+                }, 2000);
 
             })
             .then(data => console.log(data))
@@ -121,12 +128,12 @@ const Contact = () => {
                                             style={{ display: "none" }}
                                         />
                                         <div
-                                            className="success mt-3 alert alert-success text-center mb-0 p-2" id="yourElementId"
+                                            className="success mt-3 alert alert-success text-center mb-0 p-2" id="yourElementIdc"
                                             style={{ display: "none" }}>
                                             <p>Thank you for filling out your information!</p>
                                         </div>
 
-                                        <div className="loader" style={{ display: "none" }}>
+                                        <div className="loader" style={{ display: "none" }} id="loaderc">
                                             <img alt="loader" src="images/loader.gif" />
                                         </div>
                                     </div>

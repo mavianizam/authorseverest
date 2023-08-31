@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const BookVideo = () => {
     return (
@@ -25,7 +26,7 @@ const BookVideo = () => {
                                                 Promote Your Book Via Video Trailer
                                             </p>
                                             <h1 style={{ color: "#fff" }}>
-                                                {" "}
+
                                                 Unmatched Video Book Trailers Services By Matchless Company
                                             </h1>
                                             <span>
@@ -40,48 +41,9 @@ const BookVideo = () => {
                                                 impression. With our trailer service, your book will be the
                                                 talk of the town!
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -96,57 +58,16 @@ const BookVideo = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-items-center">
@@ -181,10 +102,12 @@ const BookVideo = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Looking For a Book Video Trailer Company?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Let Us Make You Aware of What Is Book Trailer Services Really!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -197,7 +120,7 @@ const BookVideo = () => {
                             <div className="orparch">
                                 <span className="urach">Why Choose Us?</span>
                                 <h2 className="main-heading">
-                                    We Do Not Just Promote Your Video Books, We Satisfy You!{" "}
+                                    We Do Not Just Promote Your Video Books, We Satisfy You!
                                 </h2>
                             </div>
                         </div>
@@ -226,7 +149,7 @@ const BookVideo = () => {
                                     <div className="txt-wrap">
                                         <h4>Custom Menu</h4>
                                         <p>
-                                            {" "}
+
                                             We offer a customizable menu of services to ensure your video
                                             trailer perfectly fits your book. From scriptwriting to
                                             editing and everything in between, we'll work with you to
@@ -265,7 +188,7 @@ const BookVideo = () => {
                                             compromise on the quality of our work. Our team of experienced
                                             professionals uses top-of-the-line equipment and the latest
                                             techniques to create stunning video trailers that capture your
-                                            audience's attention.{" "}
+                                            audience's attention.
                                         </p>
                                     </div>
                                 </li>
@@ -293,7 +216,7 @@ const BookVideo = () => {
                                             At Authors Everest, we understand that customer service is
                                             vital. Therefore, we commit to providing our clients with the
                                             best possible experience from start to finish. We ensure that
-                                            we're meeting your expectations every step of the way.{" "}
+                                            we're meeting your expectations every step of the way.
                                         </p>
                                     </div>
                                 </li>
@@ -389,9 +312,9 @@ const BookVideo = () => {
                                     <div className="rht">
                                         <h3>Book Writing </h3>
                                         <p>
-                                            We provide the{" "}
+                                            We provide the
                                             <a href="ghost-writing/"> best ghostwriting services</a> to
-                                            convert your ideas into a book and{" "}
+                                            convert your ideas into a book and
                                             <a href="editing/"> professional book editing services</a> to
                                             make your book error-free.
                                         </p>
@@ -410,9 +333,9 @@ const BookVideo = () => {
                                         <div className="rht">
                                             <h3>Book Publishing </h3>
                                             <p>
-                                                If you are looking for a{" "}
+                                                If you are looking for a
                                                 <a href="publishing/"> top self publishing company</a> for
-                                                your book, Authors Everest is the right choice for you.{" "}
+                                                your book, Authors Everest is the right choice for you.
                                             </p>
                                         </div>
                                     </div>
@@ -431,12 +354,12 @@ const BookVideo = () => {
                                     <div className="rht">
                                         <h3>Content Writing</h3>
                                         <p>
-                                            We do not just provide{" "}
+                                            We do not just provide
                                             <a href="website-content-writing/">
-                                                {" "}
+
                                                 unique content writing services
-                                            </a>{" "}
-                                            but also the{" "}
+                                            </a>
+                                            but also the
                                             <a href="proofreading/"> best proofreading services</a> to
                                             make your content flawless.
                                         </p>
@@ -456,11 +379,11 @@ const BookVideo = () => {
                                     <div className="rht">
                                         <h3>Blog Writing </h3>
                                         <p>
-                                            Our writers are known as experts in providing{" "}
+                                            Our writers are known as experts in providing
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
-                                            </a>{" "}
+                                            </a>
                                             to various clients in the writing industry.
                                         </p>
                                     </div>
@@ -479,8 +402,8 @@ const BookVideo = () => {
                                     <div className="rht">
                                         <h3>Author Website</h3>
                                         <p>
-                                            You can also acquire us for{" "}
-                                            <a href="author-website/"> author website design services</a>{" "}
+                                            You can also acquire us for
+                                            <a href="author-website/"> author website design services</a>
                                             for a great website to promote your literary work.
                                         </p>
                                     </div>
@@ -509,15 +432,9 @@ const BookVideo = () => {
                                 your video book trailer now!
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

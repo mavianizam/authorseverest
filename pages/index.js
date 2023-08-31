@@ -1,9 +1,9 @@
-import Link from "next/link"
 import BannerForm from "./comps/banner-form"
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faPhoneSquareAlt, faEnvelopesBulk } from "@fortawesome/free-solid-svg-icons";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
                   <div className="col-lg-7 col-md-7 col-sm-12 align-self-center">
                     <div className="home-banner-content home-align">
                       <p className="subtitle">
-                        Don't keep your story locked up, let it inspire the world!{" "}
+                        Don't keep your story locked up, let it inspire the world!
                       </p>
                       <h1 style={{ color: "#fff" }}>
                         Unlock Your Writing Potential with the Best Services for
@@ -36,88 +36,11 @@ export default function Home() {
                         imagination into a masterpiece. <br />
                         <br /> So why wait? Unleash your creativity and take your
                         writing to the next level today with Best Services for
-                        Authors!{" "}
+                        Authors!
                       </span>
-                      <a className="nos-btn bnr-chat-btn chat" href="javascript:;">
-                        Talk to Us
-                      </a>
-                      <a
-                        className="lets-btn"
-                        href="get-a-quote"
-                        style={{ marginLeft: 20 }}
-                      >
-                        Get A Quote
-                      </a>
-                      <a className="nos-btn" href="tel:+(818) 304-9259">
-                        Call us (818) 304-9259
-                      </a>
-                    </div>
-                    <div className="badges-box">
-                      <ul className="">
-                        <li className="first">
-                          <img
-                            className="lazy loaded"
-                            src="images/clutch-badge.png"
-                            alt="clutch-badge"
-                            width={65}
-                            height={71}
-                            data-was-processed="true"
-                          />
-                        </li>
-                        <li>
-                          <img
-                            className="lazy loaded"
-                            src="images/top-markeintg-agencies.png"
-                            alt="markeintg-agencies"
-                            width={65}
-                            height={71}
-                            data-was-processed="true"
-                          />
-                        </li>
-                        <li>
-                          <img
-                            className="lazy loaded"
-                            src="images/best-content-marketing.png"
-                            alt="content-marketing"
-                            width={65}
-                            height={71}
-                            data-was-processed="true"
-                          />
-                        </li>
-                        <li>
-                          <img
-                            className="lazy loaded"
-                            src="images/design-rush-badge.png"
-                            alt="rush-badge"
-                            width={65}
-                            height={71}
-                            data-was-processed="true"
-                          />
-                        </li>
-                        <li className="last">
-                          <img
-                            className="lazy loaded"
-                            src="images/top-seo-badge-home.webp"
-                            alt="seo-badge"
-                            width={65}
-                            height={71}
-                            data-was-processed="true"
-                          />
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="ratingBr">
-                      <p>
-                        Rated 9 out of 10{" "}
-                        <span>
-                          <i className="fa fa-star" />
-                          <i className="fa fa-star" />
-                          <i className="fa fa-star" />
-                          <i className="fa fa-star" />
-                          <i className="fa fa-star" />
-                        </span>{" "}
-                        based on more than 3,540 satisfied customers.{" "}
-                      </p>
+                      <ChatBtn />
+                      <QouteBtn />
+                      <NumberBtn />
                     </div>
                   </div>
                   <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -171,15 +94,9 @@ export default function Home() {
                   <li><FontAwesomeIcon icon={faRocket} style={{ fontSize: 16, color: "#505d89" }} />24/7 Support</li>
                 </ul>
                 <div className="mtpx-25 strugglbtns">
-                  <a className="lets-btn" href="get-a-quote">
-                    Get a Quote
-                  </a>
-                  <a className="chat nos-btn" href="javascript:;">
-                    Live Chat
-                  </a>
-                  <a className="nos-btn" href="tel:+(818) 304-9259">
-                    (818) 304-9259
-                  </a>
+                  <QouteBtn />
+                  <ChatBtn />
+                  <NumberBtn />
                 </div>
               </div>
             </div>
@@ -256,7 +173,7 @@ export default function Home() {
                   </div>
                   <div className="rht">
                     <h3>
-                      Examining And Drafting The <br /> Outline{" "}
+                      Examining And Drafting The <br /> Outline
                     </h3>
                     <p>
                       We try to understand your concept and demands and devise a plot
@@ -403,15 +320,9 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="mtpx-25 strugglbtns">
-                  <a className="lets-btn" href="get-a-quote">
-                    Get a Quote
-                  </a>
-                  <a className="nos-btn" href="javascript:;">
-                    Live Chat
-                  </a>
-                  <a className="nos-btn" href="tel:+(818) 304-9259">
-                    (818) 304-9259
-                  </a>
+                  <QouteBtn />
+                  <ChatBtn />
+                  <NumberBtn />
                 </div>
               </div>
             </div>
@@ -488,7 +399,7 @@ export default function Home() {
                 </ul>
                 <h6>Are You Looking To Get Industry Specific Content Services? </h6>
                 <span>
-                  Talk to us on a call{" "}
+                  Talk to us on a call
                   <a href="tel:+(818) 304-9259">(818) 304-9259</a>
                 </span>
               </div>
@@ -765,7 +676,7 @@ export default function Home() {
                 seller at <span>50% Off</span>
               </h2>
               <p>
-                We'll help you write the book that could be{" "}
+                We'll help you write the book that could be
                 <span>the next best seller.</span>
               </p>
               <ul>
@@ -791,7 +702,9 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <ThemeBtn />
+              <QouteBtn />
+              <ChatBtn />
+              <NumberBtn />
             </div>
           </div>
         </div>
@@ -804,7 +717,7 @@ export default function Home() {
               <div className="ghsot-wrting-dk">
                 <h3 className="main-heading">Why Choose Authors Everest?</h3>
                 <p className="main-para">
-                  {" "}
+
                   Our Services for Authors are committed to helping authors achieve
                   their dreams. Our team of experts is dedicated to providing
                   top-notch ebook writing services at an affordable price, and we're
@@ -838,8 +751,10 @@ export default function Home() {
             <div className="col-lg-11">
               <div className="wrap">
                 <h6>Striving to Sell More of your Books?</h6>
-                <h3>Why Not Hire Authors Everest to Promote Your Book!</h3>
-                <ThemeBtn />
+                <h3 className="mb-5">Why Not Hire Authors Everest to Promote Your Book!</h3>
+                <QouteBtn />
+                <ChatBtn />
+                <NumberBtn />
               </div>
             </div>
           </div>

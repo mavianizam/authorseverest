@@ -12,11 +12,31 @@ config.autoAddCss = false;
 
 
 export default function App({ Component, pageProps }) {
+
+  function ChatClick() {
+    console.log("increment like count")
+  }
+
+
+
   return (
     <>
 
 
       <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f081cf71-6296-44b5-9b54-ee7d398318cf" />
+      {/* <Script>
+        zE(function() {
+          $zopim(function () {
+            $zopim.livechat.setOnUnreadMsgs(unread);
+
+            function unread(number) {
+              if (number >= 1) {
+                $zopim.livechat.window.show();
+              }
+            }
+          })
+        });
+      </Script> */}
 
       <Head>
 
@@ -40,6 +60,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Layout>
+
         <Component {...pageProps} />
       </Layout>
     </>

@@ -1,7 +1,7 @@
-import Link from "next/link";
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import QouteBtn from "./comps/quotebtn";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
 
 const ArticleWriting = () => {
     return (
@@ -39,51 +39,13 @@ const ArticleWriting = () => {
                                                 you stand out from the crowd and make a lasting impression.
                                                 So if you're looking for top-quality writing articles that
                                                 get results, contact us today to learn more about our
-                                                exceptional services in the USA.{" "}
+                                                exceptional services in the USA.
                                             </span>
-                                            <Cta />
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
-                                        </div>
+
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
                                         <div className="banner-form">
@@ -97,57 +59,16 @@ const ArticleWriting = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-items-center">
@@ -184,11 +105,13 @@ const ArticleWriting = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Ready to Upgrade Your Content Strategy?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Pen to Perfection: Our Blog Writing Service Will Unleash the
                                     Hidden Potential of Your Business
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -202,7 +125,7 @@ const ArticleWriting = () => {
                                 <span className="urach">Our Approach</span>
                                 <h2 className="main-heading">
                                     Our Mission Is To Maximize Value For Our Authors With Online Book
-                                    Marketing{" "}
+                                    Marketing
                                 </h2>
                             </div>
                         </div>
@@ -410,9 +333,9 @@ const ArticleWriting = () => {
                                     <div className="rht">
                                         <h3>Ghostwriting</h3>
                                         <p>
-                                            Turn your ideas into reality with our{" "}
+                                            Turn your ideas into reality with our
                                             <a href="ghost-writing/"> best ghostwriting services</a>, in
-                                            addition to the{" "}
+                                            addition to the
                                             <a href="proofreading/"> best proofreading services</a>.
                                         </p>
                                     </div>
@@ -431,7 +354,7 @@ const ArticleWriting = () => {
                                     <div className="rht">
                                         <h3>Self-Publishing</h3>
                                         <p>
-                                            Get ready to publish like a pro with the{" "}
+                                            Get ready to publish like a pro with the
                                             <a href="publishing/"> top self publishing company</a> in the
                                             industry.
                                         </p>
@@ -451,14 +374,14 @@ const ArticleWriting = () => {
                                     <div className="rht">
                                         <h3>Content Writing</h3>
                                         <p>
-                                            Elevate your content game with our{" "}
+                                            Elevate your content game with our
                                             <a href="website-content-writing/">
-                                                {" "}
+
                                                 unique content writing services
-                                            </a>{" "}
-                                            and{" "}
+                                            </a>
+                                            and
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
                                             </a>
                                             .
@@ -479,7 +402,7 @@ const ArticleWriting = () => {
                                     <div className="rht">
                                         <h3>Author Website</h3>
                                         <p>
-                                            Make your author's website shine with our expert{" "}
+                                            Make your author's website shine with our expert
                                             <a href="author-website/"> author website design services</a>.
                                         </p>
                                     </div>
@@ -526,16 +449,10 @@ const ArticleWriting = () => {
                                 goals. Say goodbye to mediocre content and hire content writing
                                 expert from us today for exceptional article writing online.
                             </p>
-                            <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                            <div href="get-a-quote" className="mtpx-25 strugglbtns">
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

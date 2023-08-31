@@ -1,3 +1,6 @@
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 import ThemeBtn from "./comps/theme-btns";
 
 const Test = () => {
@@ -89,7 +92,7 @@ const Test = () => {
                                         I can only agree with the positive reviews - I have recommended
                                         the company from a friend, which is why I wanted to try it. I
                                         can say that I am very satisfied with the service, the order was
-                                        processed quickly and the price fits. Very recommendable.{" "}
+                                        processed quickly and the price fits. Very recommendable.
                                     </p>
                                     <br></br>
                                     <span>Julian Rausch - Author</span>
@@ -195,11 +198,13 @@ const Test = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Struggling To Sell More Books?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Why Not Hire Expert Book Marketing Professionals To Promote Your
                                     Book!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>

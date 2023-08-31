@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Ghost = () => {
     return (
@@ -33,45 +34,9 @@ const Ghost = () => {
                                                 best ghostwriting services to help you achieve your writing
                                                 goals.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img src="images/design-rush-badge.png" alt="rush-badge" />
-                                                </li>
-                                                {/* <li class="last">
-                              <img src="images/top-seo-badge-home.png" alt="seo-badge">
-                           </li> */}
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -86,9 +51,9 @@ const Ghost = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +76,7 @@ const Ghost = () => {
                                     author, blogger, or business owner, finding the right words can be
                                     challenging. That's why many people turn to hire a ghost writer.
                                     With their help, you can produce high-quality content that meets
-                                    your needs and appeals to your target audience.{" "}
+                                    your needs and appeals to your target audience.
                                 </p>
                                 <p className="main-para">
                                     Our ghost writers for hire are experienced professionals who can
@@ -167,7 +132,7 @@ const Ghost = () => {
                                     {/* <li>Customized Ghostwriting Services for Non-Fiction and Fiction Books</li> */}
                                     <li className="mb-2 line-10 mb-0">Professional Ghostwriting</li>
                                     <li className="mb-2">
-                                        {" "}
+
                                         <a href="e-book-writing"> eBook writing services</a>
                                     </li>
                                     <li>Expert Team</li>
@@ -176,15 +141,9 @@ const Ghost = () => {
                                     <li className="mb-2">Affordable Rates</li>
                                 </ul>
                                 <div className="mtpx-25 strugglbtns">
-                                    <a className="lets-btn" href="get-a-quote">
-                                        Get a Quote
-                                    </a>
-                                    <a className="chat nos-btn" href="javascript:;">
-                                        Live Chat
-                                    </a>
-                                    <a className="nos-btn" href="tel:+(818) 304-9259">
-                                        (818) 304-9259
-                                    </a>
+                                    <QouteBtn />
+                                    <ChatBtn />
+                                    <NumberBtn />
                                 </div>
                             </div>
                         </div>
@@ -214,7 +173,7 @@ const Ghost = () => {
                                     <div className="txt-wrap">
                                         <h4>Article Writing </h4>
                                         <p>
-                                            We offer the best{" "}
+                                            We offer the best
                                             <a href="article-writing/">article writing services</a> to help
                                             you write engaging articles that inform your potential audience
                                             about you.
@@ -228,8 +187,8 @@ const Ghost = () => {
                                     <div className="txt-wrap">
                                         <h4>Website Content Writing</h4>
                                         <p>
-                                            Our{" "}
-                                            <a href="website-content-writing/"> content writing services</a>{" "}
+                                            Our
+                                            <a href="website-content-writing/"> content writing services</a>
                                             not just only help you sell your products but also boost your
                                             website authority.
                                         </p>
@@ -242,7 +201,7 @@ const Ghost = () => {
                                     <div className="txt-wrap">
                                         <h4>Editing</h4>
                                         <p>
-                                            Get <a href="editing/"> professional book editing services</a>{" "}
+                                            Get <a href="editing/"> professional book editing services</a>
                                             and ensure your book is error-free, polished, and ready to be
                                             published.
                                         </p>
@@ -262,7 +221,7 @@ const Ghost = () => {
                                         <h4>Formatting</h4>
                                         <p>
                                             Give your readers an engaging book by ensuring it is properly
-                                            formatted with our professional{" "}
+                                            formatted with our professional
                                             <a href="formatting/"> book formatting</a> services.
                                         </p>
                                     </div>
@@ -274,10 +233,10 @@ const Ghost = () => {
                                     <div className="txt-wrap">
                                         <h4>Publishing </h4>
                                         <p>
-                                            Stop looking for{" "}
+                                            Stop looking for
                                             <a href="publishing/"> book publishing companies</a> when you
                                             have us at your service. We help you publish your book with
-                                            ease.{" "}
+                                            ease.
                                         </p>
                                     </div>
                                 </li>
@@ -288,9 +247,9 @@ const Ghost = () => {
                                     <div className="txt-wrap">
                                         <h4>Book Marketing </h4>
                                         <p>
-                                            We provide result-driven{" "}
+                                            We provide result-driven
                                             <a href="book-marketing/"> book marketing services</a> and
-                                            guarantee that you will sell more books than you expected.{" "}
+                                            guarantee that you will sell more books than you expected.
                                         </p>
                                     </div>
                                 </li>
@@ -412,12 +371,14 @@ const Ghost = () => {
                                     Are you looking for a way to make your writing more impactful and
                                     effective?
                                 </h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Say goodbye to boring writing and hello to impactful, effective
                                     content. Take your writing to the next level and hire the best
-                                    ghostwriting services. Get started today!{" "}
+                                    ghostwriting services. Get started today!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -435,7 +396,7 @@ const Ghost = () => {
                         <div className="approach-item">
                             <div className="approach-inner">
                                 <span className="approach-title">
-                                    Brainstorming and<span> Conceptualization</span>{" "}
+                                    Brainstorming and<span> Conceptualization</span>
                                 </span>
                                 <div className="approach-content">
                                     Our team of experts will brainstorm and conceptualize the best way
@@ -459,7 +420,7 @@ const Ghost = () => {
                         <div className="approach-item">
                             <div className="approach-inner">
                                 <span className="approach-title">
-                                    Draft Creation <span>and Initial Review</span>{" "}
+                                    Draft Creation <span>and Initial Review</span>
                                 </span>
                                 <div className="approach-content">
                                     Our best ghostwriters will create a draft based on the research and
@@ -480,7 +441,7 @@ const Ghost = () => {
                         <div className="approach-item">
                             <div className="approach-inner">
                                 <span className="approach-title">
-                                    Final Review <span>and Approval</span>{" "}
+                                    Final Review <span>and Approval</span>
                                 </span>
                                 <div className="approach-content">
                                     Once you are satisfied with the final draft, we will proceed with
@@ -491,7 +452,7 @@ const Ghost = () => {
                         <div className="approach-item">
                             <div className="approach-inner">
                                 <span className="approach-title">
-                                    Post-Production <span>and Promotion</span>{" "}
+                                    Post-Production <span>and Promotion</span>
                                 </span>
                                 <div className="approach-content">
                                     After the final approval, we will handle the post-production
@@ -523,15 +484,9 @@ const Ghost = () => {
                                 success!
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

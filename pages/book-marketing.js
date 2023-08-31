@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const BookMarketing = () => {
     return (
@@ -23,7 +24,7 @@ const BookMarketing = () => {
                                         <div className="home-banner-content home-align">
                                             <p className="subtitle">Self Publish Book Marketing</p>
                                             <h1 style={{ color: "#fff" }}>
-                                                {" "}
+
                                                 Get Noticed in the Crowded Book Market
                                             </h1>
                                             <span>
@@ -37,64 +38,9 @@ const BookMarketing = () => {
                                                 visibility among your targeted audience and maximize your
                                                 sales effectively.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img
-                                                        src="images/clutch-badge.png"
-                                                        alt="clutch-badge"
-                                                        width={65}
-                                                        height={71}
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                        width={65}
-                                                        height={71}
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                        width={65}
-                                                        height={71}
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                        width={65}
-                                                        height={71}
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img
-                                                        src="images/top-seo-badge-home/"
-                                                        alt="seo-badge"
-                                                        width={65}
-                                                        height={71}
-                                                    />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -109,57 +55,16 @@ const BookMarketing = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-self-center">
@@ -200,11 +105,13 @@ const BookMarketing = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Looking To Boost Your Book Sales And Reach More Readers?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Acquire Our Services Of Book Marketing For Self Published Authors.
                                     Increase Your Book Sales In No Time.
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -264,7 +171,7 @@ const BookMarketing = () => {
                                         </h4>
                                         <p>
                                             Our team of book marketing experts has years of experience
-                                            promoting self-published books, and we are a{" "}
+                                            promoting self-published books, and we are a
                                             <a href="publishing/"> top self publishing company</a> as
                                             well.
                                         </p>
@@ -365,7 +272,7 @@ const BookMarketing = () => {
                             <div className="approach-item">
                                 <div className="approach-inner">
                                     <span className="approach-title">
-                                        Analytics and Optimization{" "}
+                                        Analytics and Optimization
                                     </span>
                                     <div className="approach-content">
                                         We don't just stop at implementation. We also closely monitor
@@ -421,15 +328,9 @@ const BookMarketing = () => {
                                 achieve the heights and success you deserve!
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -470,7 +371,7 @@ const BookMarketing = () => {
                                 <h4>Author Website</h4>
                                 <p>
                                     A professional author website can help you showcase your work and
-                                    build a following. We offer{" "}
+                                    build a following. We offer
                                     <a href="author-website/"> author website design services</a> that
                                     are tailored to your individual needs. Our web designers will work
                                     with you to create a custom website showcasing your brand and your
@@ -483,7 +384,7 @@ const BookMarketing = () => {
                                 <h4>Proofreading </h4>
                                 <p>
                                     We understand that errors in your writing can be a significant
-                                    setback. That's why we offer the{" "}
+                                    setback. That's why we offer the
                                     <a href="proofreading/"> best proofreading services</a> to help
                                     you polish your work and ensure it's error-free. Our team of
                                     experienced proofreaders will meticulously review your work and
@@ -500,7 +401,7 @@ const BookMarketing = () => {
                                 <h4>Formatting</h4>
                                 <p>
                                     Formatting is an essential aspect of book publishing that can make
-                                    a big difference in the final product. We offer{" "}
+                                    a big difference in the final product. We offer
                                     <a href="formatting/"> book format</a> services to ensurethat your
                                     book looks professional and meets industry standards. Our
                                     professionals will work with you to ensure your book is formatted
@@ -513,7 +414,7 @@ const BookMarketing = () => {
                                 <h4>EBook Writing </h4>
                                 <p>
                                     In today's digital age, eBooks are becoming an increasingly
-                                    popular way to publish and distribute books. We offer{" "}
+                                    popular way to publish and distribute books. We offer
                                     <a href="e-book-writing/"> eBook writing services</a> for those
                                     who want to publish an eBook. We also provide eBook marketing that
                                     efficiently drives sales for your book.
@@ -525,11 +426,11 @@ const BookMarketing = () => {
                                 <h4>Blog Writing </h4>
                                 <p>
                                     Blogs are a great way to connect with your audience and establish
-                                    your brand. Our{" "}
-                                    <a href="blog-writing/"> professional blog writing services</a>{" "}
+                                    your brand. Our
+                                    <a href="blog-writing/"> professional blog writing services</a>
                                     can help you create informative, engaging, and relevant content
                                     for your audience. We will work with you to understand your brand
-                                    and create blog posts that reflect your values and messaging.{" "}
+                                    and create blog posts that reflect your values and messaging.
                                 </p>
                             </div>
                         </div>

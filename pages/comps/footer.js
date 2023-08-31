@@ -50,7 +50,7 @@ const Footer = () => {
                                 <p>
                                     We create content that converts. Every asset aligns with your
                                     commercial goals, speaks directly to your audience and builds a
-                                    conversation around your brand.{" "}
+                                    conversation around your brand.
                                 </p>
                             </div>
                             <div className="col-lg-2 offset-lg-1">

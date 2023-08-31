@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Book = () => {
     return (
@@ -41,48 +42,9 @@ const Book = () => {
                                                 create a book cover that will make readers stop in their
                                                 tracks and pick up your book.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -97,56 +59,14 @@ const Book = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section className="main-cmplete-sec">
                 <div className="container">
@@ -160,7 +80,7 @@ const Book = () => {
                                 <p className="main-para">
                                     We understand that as a self-published author, self-publishing
                                     book covers are just as important as those from traditional
-                                    publishers, which is why we have a team of skilled{" "}
+                                    publishers, which is why we have a team of skilled
                                     <b> book cover designers for self-publishers</b>. With their
                                     expertise in typography, color theory, and composition, they will
                                     work with you to create a stunning book cover that captures the
@@ -184,11 +104,13 @@ const Book = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Struggling To Sell More Books?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Why Not Hire Expert Book Marketing Professionals To Promote Your
                                     Book!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -291,16 +213,9 @@ const Book = () => {
                                 affordable rates and packages.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    {" "}
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -414,7 +329,7 @@ const Book = () => {
                                             book covers that make your book stand out from the
                                             competition. With our advanced rendering software, we can
                                             create lifelike 3D images of your book cover, complete with
-                                            shadows, reflections, and other realistic details.{" "}
+                                            shadows, reflections, and other realistic details.
                                         </p>
                                     </div>
                                 </li>
@@ -505,7 +420,7 @@ const Book = () => {
                                     <div className="txt-wrap">
                                         <h4>Ghostwriting</h4>
                                         <p>
-                                            If you are looking for the{" "}
+                                            If you are looking for the
                                             <a href="ghost-writing/"> best ghostwriting services</a> to
                                             bring your book idea to life, our team of experienced
                                             ghostwriters can help. We can assist you with writing your
@@ -536,7 +451,7 @@ const Book = () => {
                                     <div className="txt-wrap">
                                         <h4>Proofreading</h4>
                                         <p>
-                                            Our <a href="proofreading/"> best proofreading services</a>{" "}
+                                            Our <a href="proofreading/"> best proofreading services</a>
                                             can help you ensure that your book is error-free and polished
                                             before it hits the shelves. Our team of expert proofreaders
                                             can help you catch all those typos, grammar mistakes, and
@@ -573,7 +488,7 @@ const Book = () => {
                                         <h4>EBook Writing</h4>
                                         <p>
                                             EBooks have become increasingly popular in recent years, and
-                                            we can help you capitalize on this trend with our{" "}
+                                            we can help you capitalize on this trend with our
                                             <a href="e-book-writing/"> eBook writing services</a>. Our
                                             team of expert writers can help you create high-quality eBooks
                                             that will engage your readers and drive sales.
@@ -588,11 +503,11 @@ const Book = () => {
                                         <h4>Blog Writing</h4>
                                         <p>
                                             Blogging is a great way to connect with your readers and build
-                                            your brand. Our{" "}
+                                            your brand. Our
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
-                                            </a>{" "}
+                                            </a>
                                             can help you create compelling content that will keep your
                                             readers engaged and coming back for more.
                                         </p>

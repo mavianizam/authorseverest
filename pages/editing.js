@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Edit = () => {
     return (
@@ -33,50 +34,11 @@ const Edit = () => {
                                                 out. Authors Everest offers from copy editing services,
                                                 editing manuscript, and proofreading to developmental
                                                 editing to ensure that your manuscript is polished and ready
-                                                for publication. Contact us today!{" "}
+                                                for publication. Contact us today!
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -91,57 +53,16 @@ const Edit = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-self-center">
@@ -191,19 +112,11 @@ const Edit = () => {
                                     expertise to help you achieve your goals. Contact us today to
                                     learn more about our expertise in a variety of genres.
                                 </p>
-                                <a className="chat nos-btn blck-thm" href="javascript:;">
-                                    Start Live Chat
-                                </a>
-                                <a
-                                    className="lets-btn"
-                                    href="get-a-quote"
-                                    style={{ marginLeft: 20 }}
-                                >
-                                    Get a Quote
-                                </a>
-                                <a className="nos-btn blck-thm" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <div class="mtpx-25 strugglbtns qoute-mar">
+                                    <ChatBtn />
+                                    <QouteBtn />
+                                    <NumberBtn />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,11 +243,13 @@ const Edit = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Struggling To Sell More Books?</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Unlock Opportunities for Success with Credible, Well-Edited Books
                                     - Get Affordable Services Today!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -443,9 +358,9 @@ const Edit = () => {
                                     <div className="rht">
                                         <h3>Ghostwriting</h3>
                                         <p>
-                                            Our <a href="ghost-writing/"> best ghostwriting services</a>{" "}
+                                            Our <a href="ghost-writing/"> best ghostwriting services</a>
                                             provide you with ghostwriters to help you write a book you
-                                            have been trying to complete for a long time.{" "}
+                                            have been trying to complete for a long time.
                                         </p>
                                     </div>
                                 </li>
@@ -464,9 +379,9 @@ const Edit = () => {
                                         <h3>Proofreading</h3>
                                         <p>
                                             Find and correct any mistakes found in your manuscript with
-                                            our cheap yet{" "}
+                                            our cheap yet
                                             <a href="proofreading/"> best proofreading services</a> and
-                                            ensure your book is error-free.{" "}
+                                            ensure your book is error-free.
                                         </p>
                                     </div>
                                 </li>
@@ -485,7 +400,7 @@ const Edit = () => {
                                         <h3>Formatting</h3>
                                         <p>
                                             Make sure your book is readable and suitable for every book
-                                            format with our menu of professional{" "}
+                                            format with our menu of professional
                                             <a href="formatting/"> book formatting</a> packages.
                                         </p>
                                     </div>
@@ -505,7 +420,7 @@ const Edit = () => {
                                         <h3>Blog Writing</h3>
                                         <p>
                                             Writing blogs is an excellent way to promote your book. You
-                                            can do this effectively with our affordable{" "}
+                                            can do this effectively with our affordable
                                             <a href="blog-writing/"> blog writing services</a>.
                                         </p>
                                     </div>
@@ -524,7 +439,7 @@ const Edit = () => {
                                     <div className="rht">
                                         <h3>Book Marketing</h3>
                                         <p>
-                                            When it comes to{" "}
+                                            When it comes to
                                             <a href="book-marketing"> book marketing services</a>, there
                                             is no one like us. We are the pioneers in advertising books in
                                             front of the right audience.
@@ -547,18 +462,12 @@ const Edit = () => {
                                 Are you ready to take your book to the next level? Let our book
                                 advertisement expert team help you increase the value of your book
                                 and reach new readers. Contact us today to learn more about our
-                                services and how we can help you achieve your book marketing goals.{" "}
+                                services and how we can help you achieve your book marketing goals.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

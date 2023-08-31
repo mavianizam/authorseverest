@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Formating = () => {
     return (
@@ -43,48 +44,9 @@ const Formating = () => {
                                                 book text for both print and digital versions so that you
                                                 can reach a wider audience.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -99,57 +61,16 @@ const Formating = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-self-center">
@@ -185,11 +106,13 @@ const Formating = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Having Trouble Perfecting Your Book's Format?</h6>
-                                <h3>
+                                <h3 class="mb-5">
                                     Upgrade Your Book from Basic to Brilliant with Our EBook
                                     Formatting Services
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -202,7 +125,7 @@ const Formating = () => {
                             <div className="orparch">
                                 <span className="urach">Why Choose Us?</span>
                                 <h2 className="main-heading">
-                                    We Turn Your Book into a Fascinating a Masterpiece{" "}
+                                    We Turn Your Book into a Fascinating a Masterpiece
                                 </h2>
                             </div>
                         </div>
@@ -236,7 +159,7 @@ const Formating = () => {
                                             Brings Your Story to <span> Life </span>
                                         </h4>
                                         <p>
-                                            If you're struggling to bring your story to life, our{" "}
+                                            If you're struggling to bring your story to life, our
                                             <a href="ghost-writing/" /> best ghostwriting services are the
                                             perfect solution for you. Our team of experienced book
                                             ghostwriters can work with you to develop the storyline,
@@ -277,7 +200,7 @@ const Formating = () => {
                                             Don't Let Errors <span> Distract</span>
                                         </h4>
                                         <p>
-                                            The <a href="proofreading/"> best proofreading services</a>{" "}
+                                            The <a href="proofreading/"> best proofreading services</a>
                                             are the ones you don't notice. Our team of expert proofreaders
                                             ensures that your book is free from typos, grammatical errors,
                                             and other mistakes. We understand that errors can distract
@@ -295,17 +218,17 @@ const Formating = () => {
                                         <h4>Stand Out with Outstanding to Services </h4>
                                         <p>
                                             Authors need more than just book formatting services. This is
-                                            the reason why we offer{" "}
+                                            the reason why we offer
                                             <a href="website-content-writing/">
-                                                {" "}
+
                                                 unique content writing services
                                             </a>
                                             ,
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
                                             </a>
-                                            , and{" "}
+                                            , and
                                             <a href="author-website/"> author website design services</a>.
                                             Our writers create engaging content that helps you stand out
                                             in your niche and establish yourself as an expert in your
@@ -324,13 +247,13 @@ const Formating = () => {
                                         </h4>
                                         <p>
                                             As the <a href="publishing/"> top self publishing company</a>,
-                                            Authors Everest is dedicated to your success. Our{" "}
+                                            Authors Everest is dedicated to your success. Our
                                             <a href="e-book-writing/"> eBook writing services</a> are
                                             designed to help you achieve your goals and reach your
                                             audience. We can make you stand out in a crowded market. With
                                             our assistance, you can be confident that your book is
                                             professionally formatted, error-free, and ready to take the
-                                            world by storm.{" "}
+                                            world by storm.
                                         </p>
                                     </div>
                                 </li>
@@ -393,7 +316,7 @@ const Formating = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <h2 className="text-left main-heading">
-                                Ready To Turn Your Book Into A Work Of Art?{" "}
+                                Ready To Turn Your Book Into A Work Of Art?
                             </h2>
                             <p className="text-left main-para">
                                 Let us help you create a masterpiece with our custom book formatting
@@ -411,15 +334,9 @@ const Formating = () => {
                                 Everest, and let's achieve success together.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

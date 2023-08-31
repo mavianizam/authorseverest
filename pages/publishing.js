@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Publishing = () => {
     return (
@@ -37,48 +38,9 @@ const Publishing = () => {
                                                 the USA, delivering top-tier services at affordable rates to
                                                 authors of all genres and backgrounds.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -93,56 +55,14 @@ const Publishing = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section className="main-cmplete-sec">
                 <div className="container">
@@ -194,19 +114,11 @@ const Publishing = () => {
                                     to publish a novel, a memoir, or a self-help book, we've got you
                                     covered.
                                 </p>
-                                <a className="chat nos-btn blck-thm" href="javascript:;">
-                                    Start Live Chat
-                                </a>
-                                <a
-                                    className="lets-btn"
-                                    href="get-a-quote"
-                                    style={{ marginLeft: 20 }}
-                                >
-                                    Get a Quote
-                                </a>
-                                <a className="nos-btn blck-thm" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <div className="mtpx-25 strugglbtns qoute-mar">
+                                    <ChatBtn />
+                                    <QouteBtn />
+                                    <NumberBtn />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,16 +257,18 @@ const Publishing = () => {
                     </div>
                 </div>
             </section>
-            <section className="cta2 lazy" src="">
+            <section className="cta2 lazy  mt-3" src="">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Publishing Books Has Got Easier </h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Experience The Best Online Book Publishing Services Under One Roof
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -462,13 +376,13 @@ const Publishing = () => {
                                     <div className="txt-wrap">
                                         <h4>Ghostwriting and Ebook Writing </h4>
                                         <p>
-                                            If you want someone to provide you with{" "}
+                                            If you want someone to provide you with
                                             <a href="e-book-writing/"> ebook writing services</a>, our
                                             experienced ghostwriters are here to help you through every
-                                            phase of the process. We provide the{" "}
+                                            phase of the process. We provide the
                                             <a href="ghost-writing/"> best ghostwriting services</a> at
                                             your disposal if you're struggling with writer's block or just
-                                            need someone to complete your ebook.{" "}
+                                            need someone to complete your ebook.
                                         </p>
                                     </div>
                                 </li>
@@ -480,10 +394,10 @@ const Publishing = () => {
                                         <h4>Proofreading</h4>
                                         <p>
                                             We know that grammatical errors and typos can be the bane of a
-                                            writer's existence. Our skilled proofreaders provide you{" "}
+                                            writer's existence. Our skilled proofreaders provide you
                                             <a href="proofreading"> best proofreading services</a>. They
                                             take your book from "meh" to "masterpiece." With our help, you
-                                            can be sure that your book will shine bright like a diamond.{" "}
+                                            can be sure that your book will shine bright like a diamond.
                                         </p>
                                     </div>
                                 </li>
@@ -498,7 +412,7 @@ const Publishing = () => {
                                             fun? Publishing a beautiful book that readers will love.
                                             Therefore, we take care of the nitty-gritty details so you can
                                             emphasize the fun stuff. Our book formatting service ensures
-                                            your book format is correct and ready for publication.{" "}
+                                            your book format is correct and ready for publication.
                                         </p>
                                     </div>
                                 </li>
@@ -519,7 +433,7 @@ const Publishing = () => {
                                         <h4>Book Cover </h4>
                                         <p>
                                             "Don't judge a book by its cover." They say. But let's be
-                                            honest - we all do it. That's why having a{" "}
+                                            honest - we all do it. That's why having a
                                             <a href="book-cover/"> professional book cover design</a> is
                                             so important. At Authors Everest, our talented designers will
                                             create a book cover that will pause readers in their tracks,
@@ -536,7 +450,7 @@ const Publishing = () => {
                                         <p>
                                             You've given your heart and soul to your book, but now what?
                                             How do you get it in front of readers? That's where we come
-                                            in. Our <a href="book-marketing/"> book marketing services</a>{" "}
+                                            in. Our <a href="book-marketing/"> book marketing services</a>
                                             will help you reach a wider audience and get your book the
                                             attention it deserves. We don't just promote your book. We
                                             encourage your success!
@@ -553,11 +467,11 @@ const Publishing = () => {
                                             You have completed your book and even published it. However,
                                             you still need to promote it from time to time so that it can
                                             reach and appeal to the right audience. That is where blog
-                                            writing comes in place. Our{" "}
+                                            writing comes in place. Our
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
-                                            </a>{" "}
+                                            </a>
                                             help you write blogs that can effectively connect with the
                                             readers.
                                         </p>
@@ -573,7 +487,7 @@ const Publishing = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <h4 className="text-left main-heading">
-                                Ready to celebrate your book and boost its marketability?{" "}
+                                Ready to celebrate your book and boost its marketability?
                             </h4>
                             <p className="text-left main-para">
                                 Let our team of experts handle your publishing needs. With our
@@ -594,15 +508,9 @@ const Publishing = () => {
                                 today to learn more.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

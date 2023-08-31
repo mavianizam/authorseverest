@@ -18067,3 +18067,39 @@ button#contact-page-btn {
 .banner_form div#yourElementId p {
   line-height: 27px;
 }
+
+.main-menu>ul>li>a:hover {
+  color: white !important;
+  font-weight: bold;
+}
+
+.loader::after {
+  display: none;
+}
+
+span.arrow-down {
+  right: 0;
+  float: right;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.home-banner-content.home-align a.lets-btn {
+  margin-left: 20px;
+}
+
+section.cta-book ul {
+  margin-bottom: 20px;
+}
+
+.qoute-mar a.lets-btn {
+  margin-left: 20px;
+}
+
+.get-a-quote-form div#Elementq p {
+  padding: 0;
+}
+
+form.form_submission p {
+  padding: 0;
+}

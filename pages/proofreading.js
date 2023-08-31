@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const Proofreading = () => {
     return (
@@ -38,48 +39,9 @@ const Proofreading = () => {
                                                 shines. Reach out to us ASAP and take the first step toward
                                                 perfection.
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -94,56 +56,14 @@ const Proofreading = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <section className="main-cmplete-sec">
                 <div className="container">
@@ -180,11 +100,13 @@ const Proofreading = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Stop Stressing Out And Trust Us</h6>
-                                <h3>
+                                <h3 className="mb-5">
                                     Our Certified Proofreader Will Ensure Your Writing Empresses
                                     Everyone
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -388,13 +310,13 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
-                                            <br /> Ghostwriting{" "}
+
+                                            <br /> Ghostwriting
                                         </h4>
                                         <p>
                                             Looking to bring your unique voice and vision to life on the
-                                            page? Our team of experienced ghostwriters offers the{" "}
-                                            <a href="ghost-writing/"> best ghostwriting services</a>{" "}
+                                            page? Our team of experienced ghostwriters offers the
+                                            <a href="ghost-writing/"> best ghostwriting services</a>
                                             available, ensuring that your book is written to your exact
                                             specifications.
                                         </p>
@@ -406,12 +328,12 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
-                                            <br /> Book Cover{" "}
+
+                                            <br /> Book Cover
                                         </h4>
                                         <p>
                                             But excellent writing is only the beginning. To truly stand
-                                            out on the shelves, you'll need a{" "}
+                                            out on the shelves, you'll need a
                                             <a href="book-cover/"> professional book cover design</a> that
                                             captures the essence of your work. Our talented designers can
                                             create a cover that not only looks great but accurately
@@ -425,12 +347,12 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br /> Self-Publishing
                                         </h4>
                                         <p>
                                             Ready to self-publish? Let us help you navigate the complex
-                                            world of{" "}
+                                            world of
                                             <a href="book-marketing/"> self-publish book marketing</a>.
                                             Our marketing experts will work with you to develop a
                                             customized marketing plan that ensures your book reaches the
@@ -450,8 +372,8 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
-                                            <br /> Formatting{" "}
+
+                                            <br /> Formatting
                                         </h4>
                                         <p>
                                             The <a href="formatting/"> book format</a> is vital to your
@@ -468,13 +390,13 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
+
                                             <br />
                                             E-Book Writing
                                         </h4>
                                         <p>
                                             And if you're looking to capitalize on the popularity of
-                                            eBooks, our{" "}
+                                            eBooks, our
                                             <a href="e-book-writing/"> eBook writing services</a> can
                                             help. Our expert writers will work with you to create engaging
                                             eBooks that keep your readers returning for more.
@@ -487,22 +409,22 @@ const Proofreading = () => {
                      </figure> */}
                                     <div className="txt-wrap bg-area">
                                         <h4>
-                                            {" "}
-                                            <br /> Blog and Content Writing{" "}
+
+                                            <br /> Blog and Content Writing
                                         </h4>
                                         <p>
-                                            But why stop at books? Our{" "}
+                                            But why stop at books? Our
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
-                                            </a>{" "}
+                                            </a>
                                             can help you connect with your readers and build your brand
                                             through compelling content. And for those looking for a more
-                                            tailored approach to content creation, our{" "}
+                                            tailored approach to content creation, our
                                             <a href="website-content-writing/">
-                                                {" "}
+
                                                 unique content writing services
-                                            </a>{" "}
+                                            </a>
                                             are the perfect solution.
                                         </p>
                                     </div>
@@ -531,16 +453,10 @@ const Proofreading = () => {
                                 with our professional proofreading services.
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    {" "}
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">

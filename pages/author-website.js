@@ -1,6 +1,7 @@
 import BannerForm from "./comps/banner-form";
-import Cta from "./comps/cta";
-import ThemeBtn from "./comps/theme-btns";
+import ChatBtn from "./comps/chatbtn";
+import NumberBtn from "./comps/numberbtn";
+import QouteBtn from "./comps/quotebtn";
 
 const AuthorWebsite = () => {
     return (
@@ -42,48 +43,9 @@ const AuthorWebsite = () => {
                                                 your writing to the next level with our expertly crafted
                                                 <b> websites for writers.</b>
                                             </span>
-                                            <Cta />
-                                        </div>
-                                        <div className="badges-box">
-                                            <ul>
-                                                <li className="first">
-                                                    <img src="images/clutch-badge.png" alt="clutch-badge" />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/top-markeintg-agencies.png"
-                                                        alt="markeintg-agencies"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/best-content-marketing.png"
-                                                        alt="content-marketing"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <img
-                                                        src="images/design-rush-badge.png"
-                                                        alt="rush-badge"
-                                                    />
-                                                </li>
-                                                <li className="last">
-                                                    <img src="images/top-seo-badge-home/" alt="seo-badge" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="ratingBr">
-                                            <p>
-                                                Rated 9 out of 10
-                                                <span>
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                    <i className="fa fa-star" />
-                                                </span>{" "}
-                                                based on 3,543 satisfied customers.
-                                            </p>
+                                            <ChatBtn />
+                                            <QouteBtn />
+                                            <NumberBtn />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 align-self-center">
@@ -98,57 +60,16 @@ const AuthorWebsite = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>{" "}
+                                            </section>
                                         </div>
-                                    </div>{" "}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div className="clintlogos">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="partnerslider">
-                                <li>
-                                    <img src="images/barnes.png" alt="" width={120} height={34} />
-                                </li>
-                                <li>
-                                    <img src="images/amazon.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/esquire.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img
-                                        src="images/wikipedia-logo.png"
-                                        alt=""
-                                        width={120}
-                                        height={34}
-                                    />
-                                </li>
-                                <li>
-                                    <img src="images/forbes.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/google-book.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="images/ingram.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/random-house.svg" alt="" />
-                                </li>
-                                <li>
-                                    <img src="images/the-wall-street.svg" alt="" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <section className="main-cmplete-sec">
                 <div className="container">
                     <div className="row align-items-center">
@@ -186,12 +107,14 @@ const AuthorWebsite = () => {
                         <div className="col-lg-11">
                             <div className="wrap">
                                 <h6>Need an Author Website to Showcase Your Writing Skills?</h6>
-                                <h3>
-                                    {" "}
+                                <h3 className="mb-5">
+
                                     Hire Us and Maximize Exposure of Your Writing Skills with Our
                                     Professional Author Website Designs Services!
                                 </h3>
-                                <ThemeBtn />
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                     </div>
@@ -204,7 +127,7 @@ const AuthorWebsite = () => {
                             <div className="orparch">
                                 <span className="urach">Why Choose Us?</span>
                                 <h2 className="main-heading">
-                                    We Do Not Just Design Websites, We Take Care Of Authors!{" "}
+                                    We Do Not Just Design Websites, We Take Care Of Authors!
                                 </h2>
                             </div>
                         </div>
@@ -256,7 +179,7 @@ const AuthorWebsite = () => {
                                         <p>
                                             We understand that you're a writer, not a web designer.
                                             Therefore, we make it easy for you to manage your website with
-                                            a simple and intuitive menu.{" "}
+                                            a simple and intuitive menu.
                                         </p>
                                     </div>
                                 </li>
@@ -409,12 +332,12 @@ const AuthorWebsite = () => {
                                     <div className="rht">
                                         <h3>Book Publishing and Editing</h3>
                                         <p>
-                                            We are the best option for those seeking{" "}
+                                            We are the best option for those seeking
                                             <a href="book-editing/">
-                                                {" "}
+
                                                 professional book editing services
-                                            </a>{" "}
-                                            or looking for a{" "}
+                                            </a>
+                                            or looking for a
                                             <a href="publishing/"> top self publishing company</a> to
                                             publish their book.
                                         </p>
@@ -434,7 +357,7 @@ const AuthorWebsite = () => {
                                     <div className="rht">
                                         <h3>Proofreading</h3>
                                         <p>
-                                            Our <a href="proofreading/"> best proofreading services</a>{" "}
+                                            Our <a href="proofreading/"> best proofreading services</a>
                                             ensure that your written material is free from errors, typos,
                                             and grammatical mistakes.
                                         </p>
@@ -455,9 +378,9 @@ const AuthorWebsite = () => {
                                         <h3>Blog Writing</h3>
                                         <p>
                                             Get high-quality, engaging, and SEO-optimized blog posts for
-                                            your website or business with our{" "}
+                                            your website or business with our
                                             <a href="blog-writing/">
-                                                {" "}
+
                                                 professional blog writing services
                                             </a>
                                             .
@@ -478,7 +401,7 @@ const AuthorWebsite = () => {
                                     <div className="rht">
                                         <h3>Author Website </h3>
                                         <p>
-                                            Showcase your work and engage readers by hiring our{" "}
+                                            Showcase your work and engage readers by hiring our
                                             <a href="author-website/"> author website design services</a>.
                                         </p>
                                     </div>
@@ -498,10 +421,10 @@ const AuthorWebsite = () => {
                                         <h3>Content Writing</h3>
                                         <p>
                                             Get content that is original, creative, and tailored to your
-                                            specific needs with our{" "}
-                                            <a href="ghost-writing/"> best ghostwriting services</a> and{" "}
+                                            specific needs with our
+                                            <a href="ghost-writing/"> best ghostwriting services</a> and
                                             <a href="website-content-writing/">
-                                                {" "}
+
                                                 unique content writing services
                                             </a>
                                             .
@@ -518,7 +441,7 @@ const AuthorWebsite = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <h2 className="text-left main-heading">
-                                Searching for Author Website Design services in the USA?{" "}
+                                Searching for Author Website Design services in the USA?
                             </h2>
                             <p className="text-left main-para">
                                 Our skilled designers will work with you to create a unique and
@@ -533,15 +456,9 @@ const AuthorWebsite = () => {
                                 design services now!
                             </p>
                             <div className="mtpx-25 strugglbtns">
-                                <a className="lets-btn" href="get-a-quote">
-                                    Get a Quote
-                                </a>
-                                <a className="chat nos-btn" href="javascript:;">
-                                    Live Chat
-                                </a>
-                                <a className="nos-btn" href="tel:+(818) 304-9259">
-                                    (818) 304-9259
-                                </a>
+                                <QouteBtn />
+                                <ChatBtn />
+                                <NumberBtn />
                             </div>
                         </div>
                         <div className="col-lg-6">
