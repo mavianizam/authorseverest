@@ -1,5 +1,49 @@
+import { useState } from "react";
+
 const Contact = () => {
 
+    const [Domain, setDomain] = useState('www.authorseverest.com');
+    const [Page, setPage] = useState('Contact Form ');
+    const [Name, setName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Phone, setPhone] = useState('');
+    const [Comments, setComments] = useState('');
+
+    function ContactSubmit() {
+
+        fetch("https://formsubmit.co/ajax/harrydev96@gmail.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                Domain: Domain,
+                Page: Page,
+                Name: Name,
+                Email: Email,
+                Phone: Phone,
+                Comments: Comments,
+            })
+        })
+            .then(function (response) {
+                const element = document.getElementById('yourElementId');
+
+                if (element) {
+                    // Change the display property to "block"
+                    element.style.display = 'block';
+                    setName('');
+                    setEmail('');
+                    setPhone('');
+                    setComments('');
+                }
+
+            })
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+
+
+    }
     return (
         <section className="sec-padding mtpx-60">
             <div className="container">
@@ -15,22 +59,7 @@ const Contact = () => {
                         </p>
                         <div className="form-box-main clearfix">
                             <h2>We would like to hear from you</h2>
-                            <form
-                                className="form_submission telsubmit"
-                                method="POST"
-                                noValidate="novalidate"
-                            >
-                                <input
-                                    type="hidden"
-                                    name="domain"
-                                    defaultValue="www.authorseverest.com"
-                                />
-                                <input
-                                    type="hidden"
-                                    name="subject"
-                                    defaultValue="Banner Form (www.authorseverest.com)"
-                                />
-                                <input type="text" className="jun" name="gender" />
+                            <form className="form_submission telsubmit">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <label className="field-txt">
@@ -38,9 +67,10 @@ const Contact = () => {
                                         </label>
                                         <input
                                             type="text"
+                                            value={Name}
+                                            onChange={e => { setName(e.currentTarget.value); }}
                                             className="form-control"
                                             placeholder="Enter Your Name *"
-                                            name="cn"
                                             required=""
                                         />
                                     </div>
@@ -50,9 +80,10 @@ const Contact = () => {
                                         </label>
                                         <input
                                             type="email"
+                                            value={Email}
+                                            onChange={e => { setEmail(e.currentTarget.value); }}
                                             className="form-control"
                                             placeholder="Enter email here *"
-                                            name="em"
                                             required=""
                                         />
                                     </div>
@@ -62,9 +93,10 @@ const Contact = () => {
                                         </label>
                                         <input
                                             type="number"
+                                            value={Phone}
+                                            onChange={e => { setPhone(e.currentTarget.value); }}
                                             className="form-control"
                                             placeholder="Enter number here *"
-                                            name="num"
                                             required=""
                                         />
                                     </div>
@@ -74,13 +106,14 @@ const Contact = () => {
                                         </label>
                                         <textarea
                                             className="form-control"
+                                            value={Comments}
+                                            onChange={e => { setComments(e.currentTarget.value); }}
                                             placeholder="Enter message here"
-                                            name="msg"
                                             defaultValue={""}
                                         />
                                     </div>
                                     <div className="col-md-12">
-                                        <input name="submit" type="submit" placeholder="Submit" />
+                                        <button id="contact-page-btn" name="submit" type="button" onClick={ContactSubmit}>Submit</button>
                                     </div>
                                     <div className="col-md-12 col-xs-12">
                                         <div
@@ -88,9 +121,11 @@ const Contact = () => {
                                             style={{ display: "none" }}
                                         />
                                         <div
-                                            className="success mt-3 alert alert-success text-center mb-0 p-2"
-                                            style={{ display: "none" }}
-                                        />
+                                            className="success mt-3 alert alert-success text-center mb-0 p-2" id="yourElementId"
+                                            style={{ display: "none" }}>
+                                            <p>Thank you for filling out your information!</p>
+                                        </div>
+
                                         <div className="loader" style={{ display: "none" }}>
                                             <img alt="loader" src="images/loader.gif" />
                                         </div>

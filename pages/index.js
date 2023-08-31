@@ -3,6 +3,7 @@ import BannerForm from "./comps/banner-form"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faPhoneSquareAlt, faEnvelopesBulk } from "@fortawesome/free-solid-svg-icons";
+import ThemeBtn from "./comps/theme-btns";
 
 export default function Home() {
   return (
@@ -790,17 +791,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <div className="theme-btns">
-                <a className="lets-btn" href="get-a-quote">
-                  Get a Quote
-                </a>
-                <a className="chat nos-btn" href="javascript:;">
-                  Live Chat
-                </a>
-                <a className="nos-btn" href="tel:+(818) 304-9259">
-                  (818) 304-9259
-                </a>
-              </div>
+              <ThemeBtn />
             </div>
           </div>
         </div>
@@ -848,17 +839,7 @@ export default function Home() {
               <div className="wrap">
                 <h6>Striving to Sell More of your Books?</h6>
                 <h3>Why Not Hire Authors Everest to Promote Your Book!</h3>
-                <div className="theme-btns">
-                  <a className="lets-btn" href="get-a-quote">
-                    Get a Quote
-                  </a>
-                  <a className="nos-btn" href="javascript:;">
-                    Live Chat
-                  </a>
-                  <a className="nos-btn" href="tel:+(818) 304-9259">
-                    (818) 304-9259
-                  </a>
-                </div>
+                <ThemeBtn />
               </div>
             </div>
           </div>

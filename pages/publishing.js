@@ -1,5 +1,6 @@
 import BannerForm from "./comps/banner-form";
 import Cta from "./comps/cta";
+import ThemeBtn from "./comps/theme-btns";
 
 const Publishing = () => {
     return (
@@ -353,17 +354,7 @@ const Publishing = () => {
                                 <h3>
                                     Experience The Best Online Book Publishing Services Under One Roof
                                 </h3>
-                                <div className="theme-btns">
-                                    <a className="lets-btn" href="get-a-quote">
-                                        Get a Quote
-                                    </a>
-                                    <a className="chat nos-btn" href="javascript:;">
-                                        Live Chat
-                                    </a>
-                                    <a className="nos-btn" href="tel:+(818) 304-9259">
-                                        (818) 304-9259
-                                    </a>
-                                </div>
+                                <ThemeBtn />
                             </div>
                         </div>
                     </div>

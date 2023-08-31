@@ -58,94 +58,78 @@ const Footer = () => {
                                 <ul className="footer-nav">
 
                                     <li>
-                                        <a href="ghost-writing">Ghost Writing</a>
+                                        <Link href="ghost-writing">Ghost Writing</Link>
                                     </li>
 
                                     <li>
-                                        <a href="editing">Editing</a>
+                                        <Link href="editing">Editing</Link>
                                     </li>
 
                                     <li>
-                                        <a href="publishing">Publishing</a>
+                                        <Link href="publishing">Publishing</Link>
                                     </li>
 
                                     <li>
-                                        <a href="proofreading">Proofreading</a>
+                                        <Link href="proofreading">Proofreading</Link>
                                     </li>
 
                                     <li>
-                                        <a href="audio-book">Audio Book</a>
+                                        <Link href="audio-book">Audio Book</Link>
                                     </li>
 
                                     <li>
-                                        <a href="blog-writing">Blog Writing</a>
+                                        <Link href="book-cover">Book Cover</Link>
                                     </li>
 
                                     <li>
-
-                                        <a href="website-content-writing">Website Content Writing</a>
-
+                                        <Link href="website-content-writing">Website Content Writing</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-lg-2">
                                 <h4 className="hiddenmob">&nbsp;</h4>
                                 <ul className="footer-nav">
-
-                                    {/* <li><a href="book-">Book </a></li> */}
                                     <li>
-                                        <a href="book-cover">Book Cover</a>
+                                        <Link href="book-cover">Book Cover</Link>
                                     </li>
 
                                     <li>
-                                        <a href="book-marketing">Book Marketing</a>
+                                        <Link href="book-marketing">Book Marketing</Link>
                                     </li>
 
                                     <li>
-                                        <a href="formatting">Formatting</a>
+                                        <Link href="formatting">Formatting</Link>
                                     </li>
 
                                     <li>
-                                        <a href="e-book-writing">e-Book Writing</a>
+                                        <Link href="e-book-writing">E-Book Writing</Link>
                                     </li>
 
                                     <li>
-                                        <a href="book-video-trailer">Book Video Trailer</a>
-
+                                        <Link href="book-video-trailer">Book Video Trailer</Link>
                                     </li>
 
                                     <li>
-                                        <a href="author-website">Author Website</a>
+                                        <Link href="author-website">Author Website</Link>
                                     </li>
 
                                     <li>
-                                        <a href="article-writing">Article Writing</a>
-
+                                        <Link href="article-writing">Article Writing</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-lg-2">
                                 <h4>Company</h4>
                                 <ul className="footer-nav">
-
                                     <li>
-                                        <a href="about-us">About Us </a>
+                                        <Link href="testimonials">Testimonials</Link>
                                     </li>
-
                                     <li>
-                                        <a href="testimonials">Testimonials</a>
+                                        <Link href="contact">Contact</Link>
                                     </li>
-
-                                    {/* <li><a href="pricing/">Pricing</a></li> */}
                                     <li>
-                                        <a href="contact-us">Contact Us</a>
+                                        <Link href="faq">Faq's</Link>
                                     </li>
-
-                                    <li>
-                                        <a href="faq">FAQ's</a>
-                                    </li>
-
-
                                 </ul>
                             </div>
                         </div>

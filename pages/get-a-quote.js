@@ -11,7 +11,7 @@ const GetAQuote = () => {
                                         <div className="col-lg-8 offset-lg-2   inner-content mtpx-100 text-left">
                                             <div className="form-box-main clearfix">
                                                 <h2>We would like to hear from you</h2>
-                                                <form className="form_submission telsubmit" method="POST" action="https://formsubmit.co/harrydev96@gmail.com">
+                                                <form className="form_submission telsubmit get-a-quote-form" method="POST" action="https://formsubmit.co/harrydev96@gmail.com">
                                                     <input
                                                         type="hidden"
                                                         name="url"

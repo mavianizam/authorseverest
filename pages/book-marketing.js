@@ -1,5 +1,6 @@
 import BannerForm from "./comps/banner-form";
 import Cta from "./comps/cta";
+import ThemeBtn from "./comps/theme-btns";
 
 const BookMarketing = () => {
     return (
@@ -203,17 +204,7 @@ const BookMarketing = () => {
                                     Acquire Our Services Of Book Marketing For Self Published Authors.
                                     Increase Your Book Sales In No Time.
                                 </h3>
-                                <div className="theme-btns">
-                                    <a className="lets-btn" href="get-a-quote">
-                                        Get a Quote
-                                    </a>
-                                    <a className="chat nos-btn" href="javascript:;">
-                                        Live Chat
-                                    </a>
-                                    <a className="nos-btn" href="tel:+(818) 304-9259">
-                                        (818) 304-9259
-                                    </a>
-                                </div>
+                                <ThemeBtn />
                             </div>
                         </div>
                     </div>

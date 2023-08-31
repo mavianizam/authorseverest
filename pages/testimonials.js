@@ -1,3 +1,5 @@
+import ThemeBtn from "./comps/theme-btns";
+
 const Test = () => {
     return (
         <>
@@ -197,17 +199,7 @@ const Test = () => {
                                     Why Not Hire Expert Book Marketing Professionals To Promote Your
                                     Book!
                                 </h3>
-                                <div className="theme-btns">
-                                    <a className="lets-btn" href="get-a-quote">
-                                        Get a Quote
-                                    </a>
-                                    <a className="chat nos-btn" href="javascript:;">
-                                        Live Chat
-                                    </a>
-                                    <a className="nos-btn" href="tel:+(818) 304-9259">
-                                        (818) 304-9259
-                                    </a>
-                                </div>
+                                <ThemeBtn />
                             </div>
                         </div>
                     </div>

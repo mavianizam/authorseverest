@@ -1,5 +1,7 @@
+import Link from "next/link";
 import BannerForm from "./comps/banner-form";
 import Cta from "./comps/cta";
+import ThemeBtn from "./comps/theme-btns";
 
 const ArticleWriting = () => {
     return (
@@ -186,17 +188,7 @@ const ArticleWriting = () => {
                                     Pen to Perfection: Our Blog Writing Service Will Unleash the
                                     Hidden Potential of Your Business
                                 </h3>
-                                <div className="theme-btns">
-                                    <a className="lets-btn" href="get-a-quote">
-                                        Get a Quote
-                                    </a>
-                                    <a className="chat nos-btn" href="javascript:;">
-                                        Live Chat
-                                    </a>
-                                    <a className="nos-btn" href="tel:+(818) 304-9259">
-                                        (818) 304-9259
-                                    </a>
-                                </div>
+                                <ThemeBtn />
                             </div>
                         </div>
                     </div>
