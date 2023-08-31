@@ -1,7 +1,6 @@
 import ChatBtn from "./comps/chatbtn";
 import NumberBtn from "./comps/numberbtn";
 import QouteBtn from "./comps/quotebtn";
-import ThemeBtn from "./comps/theme-btns";
 
 const Test = () => {
     return (
