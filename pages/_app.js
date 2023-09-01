@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import Layout from './comps/layout';
 import Head from "next/head";
 import Script from "next/script";
-
+import { useEffect } from 'react';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -10,33 +10,33 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 // since it's already imported above
 config.autoAddCss = false;
 
+const ZENDESK_KEY = "f081cf71-6296-44b5-9b54-ee7d398318cf";
+import Zendesk, { ZendeskAPI } from "@/pages/zendesk";
+
 
 export default function App({ Component, pageProps }) {
 
-  function ChatClick() {
-    console.log("increment like count")
-  }
+  const handleLoaded = () => {
+    ZendeskAPI("messenger", "open");
+    zE(function () {
+      $zopim(function () {
+        $zopim.livechat.setOnUnreadMsgs(unread);
+
+        function unread(number) {
+          if (number >= 1) {
+            $zopim.livechat.window.show();
+          }
+        }
+      });
+    });
+  };
 
 
 
   return (
+
     <>
-
-
-      <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f081cf71-6296-44b5-9b54-ee7d398318cf" />
-      {/* <Script>
-        zE(function() {
-          $zopim(function () {
-            $zopim.livechat.setOnUnreadMsgs(unread);
-
-            function unread(number) {
-              if (number >= 1) {
-                $zopim.livechat.window.show();
-              }
-            }
-          })
-        });
-      </Script> */}
+      <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
 
       <Head>
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import ChatBtn from "./chatbtn";
-
+import { useEffect } from "react";
 
 
 
@@ -25,7 +25,10 @@ const Header = () => {
 
     function toggle() {
         setshowPopup(!showPopup);
+
+
     }
+
 
 
     const { asPath } = useRouter();
@@ -44,7 +47,7 @@ const Header = () => {
 
 
 
-        fetch("https://formsubmit.co/ajax/harrydev96@gmail.com", {
+        fetch("https://formsubmit.co/ajax/info@authorseverest.com", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -87,12 +90,24 @@ const Header = () => {
     }
 
     const [showChat, setShowChat] = useState(false);
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            const formpopup = document.getElementById('ys_container');
+            formpopup.style.display = 'block';
+
+        }, 2000);
+    }, [])
+
+
+
     return (
         <>
             <div
                 className="popup popup-layout popup-default ys-container formpopup"
                 style={{
-                    display: showPopup ? "none " : "block"
+                    display: showPopup ? "block" : "none"
                 }}
                 id="ys_container"
             >
