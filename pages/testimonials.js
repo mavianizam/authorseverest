@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ChatBtn from "./comps/chatbtn";
 import NumberBtn from "./comps/numberbtn";
 import QouteBtn from "./comps/quotebtn";
@@ -5,6 +6,10 @@ import QouteBtn from "./comps/quotebtn";
 const Test = () => {
     return (
         <>
+            <Head>
+                <title>Testimonials</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
             <section className="sec-padding wow-testimonial mtpx-50">
                 <div className="container">
                     <div className="row">

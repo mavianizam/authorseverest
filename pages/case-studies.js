@@ -1,7 +1,13 @@
+import Head from "next/head";
+
 const Case = () => {
 
     return (
         <>
+            <Head>
+                <title>Case Studies</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
             <section className="main-cmplete-sec mt-5">
                 <div className="container">
                     <div className="row align-self-center">

@@ -5,6 +5,10 @@ import Accordion from './comps/accordion';
 function AccordionPage() {
     return (
         <>
+            <Head>
+                <title>Faq</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
             <section className="sec-padding main-faq-sec mtpx-50">
                 <div className="container">
                     <div className="row">

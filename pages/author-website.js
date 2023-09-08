@@ -1,3 +1,4 @@
+import Head from "next/head";
 import BannerForm from "./comps/banner-form";
 import ChatBtn from "./comps/chatbtn";
 import NumberBtn from "./comps/numberbtn";
@@ -6,6 +7,10 @@ import QouteBtn from "./comps/quotebtn";
 const AuthorWebsite = () => {
     return (
         <>
+            <Head>
+                <title>Author Website</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
             <div
                 className="slider-wrapper"
                 style={{

@@ -1,6 +1,12 @@
+import Head from "next/head";
+
 const Thanks = () => {
     return (
         <>
+            <Head>
+                <title>Thank You/title</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
             <section className="sec-padding1 mtpx-60">
                 <div className="container">
                     <div className="row">

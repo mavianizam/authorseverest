@@ -4,10 +4,18 @@ import { faRocket, faPhoneSquareAlt, faEnvelopesBulk } from "@fortawesome/free-s
 import ChatBtn from "./comps/chatbtn";
 import NumberBtn from "./comps/numberbtn";
 import QouteBtn from "./comps/quotebtn";
+import Head from "next/head";
+
+
+
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+        <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+      </Head>
       <div
         className="slider-wrapper lazy"
         data-src="/images/homebanner.webp"

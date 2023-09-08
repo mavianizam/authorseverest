@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Router from "next/router";
+import Head from "next/head";
 
 
 
@@ -59,72 +60,78 @@ const GetAQuote = () => {
 
     }
     return (
-        <div className="slider-wrapper black">
-            <section className="">
-                <div className="item">
-                    <div className="home-banner " style={{ background: "#f7f9fc" }}>
-                        <div className="container ">
-                            <div className="row">
-                                <div className=" col-lg-12 col-xl-12 text-center">
-                                    <div className="home-banner-content">
-                                        <div className="col-lg-8 offset-lg-2   inner-content mtpx-100 text-left">
-                                            <div className="form-box-main clearfix">
-                                                <h2>We would like to hear from you</h2>
-                                                <form className="form_submission telsubmit get-a-quote-form">
-                                                    <div className="row">
-                                                        <div className="col-md-6">
-                                                            <label className="field-txt">
-                                                                Name <span>*</span>
-                                                            </label>
-                                                            <input type="text" value={Name} onChange={e => { setName(e.currentTarget.value); }} className="form-control" placeholder="Enter Your Name *" required="" />
-                                                        </div>
-                                                        <div className="col-md-6">
-                                                            <label className="field-txt">
-                                                                Email <span>*</span>
-                                                            </label>
-                                                            <input type="email" value={Email} onChange={e => { setEmail(e.currentTarget.value); }} className="form-control" placeholder="Enter email here *" required="" />
-                                                        </div>
-                                                        <div className="col-md-12">
-                                                            <label className="field-txt">
-                                                                Phone Number<span>*</span>
-                                                            </label>
-                                                            <input type="number" value={Phone}
-                                                                onChange={e => { setPhone(e.currentTarget.value); }}
-                                                                className="form-control"
-                                                                placeholder="Enter number here *"
-                                                                required=""
-                                                            />
-                                                        </div>
-                                                        <div className="col-md-12">
-                                                            <label className="field-txt">
-                                                                Additional Comments <span>*</span>
-                                                            </label>
-                                                            <textarea className="form-control" value={Comments} onChange={e => { setComments(e.currentTarget.value); }} placeholder="Enter message here" />
-                                                        </div>
-                                                        <div className="col-md-12">
-                                                            <button id="contact-page-btn" name="submit" type="button" onClick={ContactSubmit}>Submit</button>
-                                                        </div>
-                                                        <div className="col-md-12">
-                                                            <div className="error mt-3 alert alert-danger text-left mb-0" style={{ display: "none" }} />
-
-                                                            <div
-                                                                className="success mt-3 alert alert-success text-center mb-0 p-2" id="Elementq"
-                                                                style={{ display: "none" }}>
-                                                                <p>Thank you for filling out your information!</p>
+        <>
+            <Head>
+                <title>Get A Quote</title>
+                <meta name="description" content="Don't keep your story locked up, let it inspire the world!"></meta>
+            </Head>
+            <div className="slider-wrapper black">
+                <section className="">
+                    <div className="item">
+                        <div className="home-banner " style={{ background: "#f7f9fc" }}>
+                            <div className="container ">
+                                <div className="row">
+                                    <div className=" col-lg-12 col-xl-12 text-center">
+                                        <div className="home-banner-content">
+                                            <div className="col-lg-8 offset-lg-2   inner-content mtpx-100 text-left">
+                                                <div className="form-box-main clearfix">
+                                                    <h2>We would like to hear from you</h2>
+                                                    <form className="form_submission telsubmit get-a-quote-form">
+                                                        <div className="row">
+                                                            <div className="col-md-6">
+                                                                <label className="field-txt">
+                                                                    Name <span>*</span>
+                                                                </label>
+                                                                <input type="text" value={Name} onChange={e => { setName(e.currentTarget.value); }} className="form-control" placeholder="Enter Your Name *" required="" />
                                                             </div>
-                                                            <div
-                                                                className="loader" id="loaderq"
-                                                                style={{ display: "none" }}
-                                                            >
-                                                                <img
-                                                                    alt="loader"
-                                                                    src="images/loader.gif"
-                                                                    className="img-fluid"
+                                                            <div className="col-md-6">
+                                                                <label className="field-txt">
+                                                                    Email <span>*</span>
+                                                                </label>
+                                                                <input type="email" value={Email} onChange={e => { setEmail(e.currentTarget.value); }} className="form-control" placeholder="Enter email here *" required="" />
+                                                            </div>
+                                                            <div className="col-md-12">
+                                                                <label className="field-txt">
+                                                                    Phone Number<span>*</span>
+                                                                </label>
+                                                                <input type="number" value={Phone}
+                                                                    onChange={e => { setPhone(e.currentTarget.value); }}
+                                                                    className="form-control"
+                                                                    placeholder="Enter number here *"
+                                                                    required=""
                                                                 />
                                                             </div>
+                                                            <div className="col-md-12">
+                                                                <label className="field-txt">
+                                                                    Additional Comments <span>*</span>
+                                                                </label>
+                                                                <textarea className="form-control" value={Comments} onChange={e => { setComments(e.currentTarget.value); }} placeholder="Enter message here" />
+                                                            </div>
+                                                            <div className="col-md-12">
+                                                                <button id="contact-page-btn" name="submit" type="button" onClick={ContactSubmit}>Submit</button>
+                                                            </div>
+                                                            <div className="col-md-12">
+                                                                <div className="error mt-3 alert alert-danger text-left mb-0" style={{ display: "none" }} />
+
+                                                                <div
+                                                                    className="success mt-3 alert alert-success text-center mb-0 p-2" id="Elementq"
+                                                                    style={{ display: "none" }}>
+                                                                    <p>Thank you for filling out your information!</p>
+                                                                </div>
+                                                                <div
+                                                                    className="loader" id="loaderq"
+                                                                    style={{ display: "none" }}
+                                                                >
+                                                                    <img
+                                                                        alt="loader"
+                                                                        src="images/loader.gif"
+                                                                        className="img-fluid"
+                                                                    />
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </form>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -132,10 +139,9 @@ const GetAQuote = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-
+                </section>
+            </div>
+        </>
     );
 }
 

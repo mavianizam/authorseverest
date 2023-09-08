@@ -40,7 +40,8 @@ export default function App({ Component, pageProps }) {
 
       <Head>
 
-
+        <title>Authors Everest</title>
+        <meta name="description" content="Free Web tutorials"></meta>
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
