@@ -17,8 +17,7 @@ const Footer = () => {
                 className="downform lazy"
                 src="images/bg-v2.png"
                 data-was-processed="true"
-                id={asPath}
-            >
+                id={asPath}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">

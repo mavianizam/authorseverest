@@ -18107,3 +18107,11 @@ form.form_submission p {
 .bannerform-heading p {
   line-height: 50px;
 }
+
+section.sec-padding1 {
+  padding: 150px 0px;
+}
+
+section#\/thankyou {
+  display: none;
+}

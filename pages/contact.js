@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Router from "next/router";
 
 const Contact = () => {
 
@@ -44,6 +45,8 @@ const Contact = () => {
                 setTimeout(() => {
                     elementc.style.display = 'none';
                 }, 2000);
+
+                Router.replace("/thankyou");
 
             })
             .then(data => console.log(data))

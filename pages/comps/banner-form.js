@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Router from "next/router";
 
 const BannerForm = () => {
 
@@ -47,6 +48,7 @@ const BannerForm = () => {
                     setPhone('');
                     setComments('');
                 }
+                Router.replace("/thankyou");
 
             })
             .then(data => console.log(data))

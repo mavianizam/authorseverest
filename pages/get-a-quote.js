@@ -1,6 +1,10 @@
 import { useState } from "react";
+import Router from "next/router";
+
+
 
 const GetAQuote = () => {
+
 
     const [Domain, setDomain] = useState('www.authorseverest.com');
     const [Subject, setSubject] = useState('Get A Qoute Form');
@@ -45,6 +49,9 @@ const GetAQuote = () => {
                 setTimeout(() => {
                     Elementq.style.display = 'none';
                 }, 2000);
+
+                Router.replace("/thankyou");
+
             })
             .then(data => console.log(data))
             .catch(error => console.log(error));

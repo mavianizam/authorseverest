@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import ChatBtn from "./chatbtn";
 import { useEffect } from "react";
+import Router from "next/router";
 
 
 
@@ -82,6 +83,7 @@ const Header = () => {
                     ys_container.style.display = 'none';
                 }, 2000);
 
+                Router.replace("/thankyou");
             })
             .then(data => console.log(data))
             .catch(error => console.log(error));
@@ -97,7 +99,7 @@ const Header = () => {
             const formpopup = document.getElementById('ys_container');
             formpopup.style.display = 'block';
 
-        }, 2000);
+        }, 5000);
     }, [])
 
 
