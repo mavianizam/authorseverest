@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from './comps/accordion';
+import Head from 'next/head';
 
 
 function AccordionPage() {
