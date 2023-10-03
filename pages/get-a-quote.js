@@ -14,7 +14,35 @@ const GetAQuote = () => {
     const [Phone, setPhone] = useState('');
     const [Comments, setComments] = useState('');
 
+    const nameerror = 'enter your name'
+    const emailerror = 'enter your Email'
+    const phoneerror = 'enter your Phone'
+
+    const [showMe, setShowMe] = useState(false);
+
     function ContactSubmit() {
+
+
+        if (!Name) {
+            console.log(nameerror)
+            setShowMe(!showMe);
+
+            // document.getElementById(styles["error"]).classList.add(styles["display-block"]);
+            return (false);
+        }
+        if (!Email) {
+            console.log(emailerror)
+            setShowMe(!showMe);
+            return (false);
+        }
+        if (!Phone) {
+            console.log(phoneerror)
+            setShowMe(!showMe);
+            return (false);
+        }
+
+
+
         const loaderq = document.getElementById('loaderq');
         loaderq.style.display = 'block';
 
@@ -83,12 +111,18 @@ const GetAQuote = () => {
                                                                     Name <span>*</span>
                                                                 </label>
                                                                 <input type="text" value={Name} onChange={e => { setName(e.currentTarget.value); }} className="form-control" placeholder="Enter Your Name *" required="" />
+                                                                <p className="error" style={{
+                                                                    display: showMe ? "block" : "none"
+                                                                }}>{nameerror}</p>
                                                             </div>
                                                             <div className="col-md-6">
                                                                 <label className="field-txt">
                                                                     Email <span>*</span>
                                                                 </label>
                                                                 <input type="email" value={Email} onChange={e => { setEmail(e.currentTarget.value); }} className="form-control" placeholder="Enter email here *" required="" />
+                                                                <p className="error" style={{
+                                                                    display: showMe ? "block" : "none"
+                                                                }}>{emailerror}</p>
                                                             </div>
                                                             <div className="col-md-12">
                                                                 <label className="field-txt">
@@ -100,6 +134,9 @@ const GetAQuote = () => {
                                                                     placeholder="Enter number here *"
                                                                     required=""
                                                                 />
+                                                                <p className="error" style={{
+                                                                    display: showMe ? "block" : "none"
+                                                                }}>{phoneerror}</p>
                                                             </div>
                                                             <div className="col-md-12">
                                                                 <label className="field-txt">

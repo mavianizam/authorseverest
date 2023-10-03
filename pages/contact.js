@@ -11,7 +11,31 @@ const Contact = () => {
     const [Phone, setPhone] = useState('');
     const [Comments, setComments] = useState('');
 
+    const nameerror = 'enter your name'
+    const emailerror = 'enter your Email'
+    const phoneerror = 'enter your Phone'
+
+    const [showMe, setShowMe] = useState(false);
+
     function ContactSubmit() {
+
+        if (!Name) {
+            console.log(nameerror)
+            setShowMe(!showMe);
+
+            // document.getElementById(styles["error"]).classList.add(styles["display-block"]);
+            return (false);
+        }
+        if (!Email) {
+            console.log(emailerror)
+            setShowMe(!showMe);
+            return (false);
+        }
+        if (!Phone) {
+            console.log(phoneerror)
+            setShowMe(!showMe);
+            return (false);
+        }
 
         const loaderc = document.getElementById('loaderc');
         loaderc.style.display = 'block';
@@ -88,8 +112,11 @@ const Contact = () => {
                                                 onChange={e => { setName(e.currentTarget.value); }}
                                                 className="form-control"
                                                 placeholder="Enter Your Name *"
-                                                required=""
+                                                required
                                             />
+                                            <p className="error" style={{
+                                                display: showMe ? "block" : "none"
+                                            }}>{nameerror}</p>
                                         </div>
                                         <div className="col-md-6">
                                             <label className="field-txt">
@@ -103,6 +130,9 @@ const Contact = () => {
                                                 placeholder="Enter email here *"
                                                 required=""
                                             />
+                                            <p className="error" style={{
+                                                display: showMe ? "block" : "none"
+                                            }}>{emailerror}</p>
                                         </div>
                                         <div className="col-md-12">
                                             <label className="field-txt">
@@ -116,6 +146,9 @@ const Contact = () => {
                                                 placeholder="Enter number here *"
                                                 required=""
                                             />
+                                            <p className="error" style={{
+                                                display: showMe ? "block" : "none"
+                                            }}>{phoneerror}</p>
                                         </div>
                                         <div className="col-md-12">
                                             <label className="field-txt">

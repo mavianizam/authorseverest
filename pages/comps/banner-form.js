@@ -14,7 +14,33 @@ const BannerForm = () => {
     const [Phone, setPhone] = useState('');
     const [Comments, setComments] = useState('');
 
+
+    const nameerror = 'enter your name'
+    const emailerror = 'enter your Email'
+    const phoneerror = 'enter your Phone'
+
+    const [showMe, setShowMe] = useState(false);
+
     function ContactSubmit() {
+
+
+        if (!Name) {
+            console.log(nameerror)
+            setShowMe(!showMe);
+
+            // document.getElementById(styles["error"]).classList.add(styles["display-block"]);
+            return (false);
+        }
+        if (!Email) {
+            console.log(emailerror)
+            setShowMe(!showMe);
+            return (false);
+        }
+        if (!Phone) {
+            console.log(phoneerror)
+            setShowMe(!showMe);
+            return (false);
+        }
         const loader = document.getElementById('loader');
         loader.style.display = 'block';
 
@@ -77,6 +103,9 @@ const BannerForm = () => {
                             placeholder="Enter Your Name *"
                             required=""
                         />
+                        <p className="error" style={{
+                            display: showMe ? "block" : "none"
+                        }}>{nameerror}</p>
                     </div>
                 </div>
                 <div className="col-lg-12">
@@ -89,6 +118,9 @@ const BannerForm = () => {
                             placeholder="Enter email here *"
                             required=""
                         />
+                        <p className="error" style={{
+                            display: showMe ? "block" : "none"
+                        }}>{emailerror}</p>
                     </div>
                 </div>
                 <div className="col-lg-12">
@@ -101,6 +133,9 @@ const BannerForm = () => {
                             placeholder="Enter number here *"
                             required=""
                         />
+                        <p className="error" style={{
+                            display: showMe ? "block" : "none"
+                        }}>{phoneerror}</p>
                     </div>
                 </div>
                 <div className="col-lg-12">
