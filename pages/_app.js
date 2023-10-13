@@ -35,17 +35,8 @@ export default function App({ Component, pageProps }) {
 
     <>
       {/* <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} /> */}
-      <Script id="show-banner">
-  {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6529a80d6fcfe87d54b99936/1hclbgtvm';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();`}
-</Script>
+      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c8eb3388-cbdb-40d3-a5f4-e2624762999d"> </script>
+     
 
 
       <Head>
