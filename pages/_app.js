@@ -10,7 +10,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 // since it's already imported above
 config.autoAddCss = false;
 
-const ZENDESK_KEY = "f081cf71-6296-44b5-9b54-ee7d398318cf";
+const ZENDESK_KEY = "c8eb3388-cbdb-40d3-a5f4-e2624762999d";
 import Zendesk, { ZendeskAPI } from "@/pages/zendesk";
 
 
@@ -34,8 +34,7 @@ export default function App({ Component, pageProps }) {
   return (
 
     <>
-      {/* <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} /> */}
-      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c8eb3388-cbdb-40d3-a5f4-e2624762999d"> </script>
+      <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
      
 
 
