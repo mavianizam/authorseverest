@@ -23,7 +23,6 @@ const BannerForm = () => {
 
     function ContactSubmit() {
 
-
         if (!Name) {
             console.log(nameerror)
             setShowMe(!showMe);
@@ -41,9 +40,10 @@ const BannerForm = () => {
             setShowMe(!showMe);
             return (false);
         }
-        const loader = document.getElementById('loader');
-        loader.style.display = 'block';
-
+        const loader = document.getElementsByClassName('loader');
+        for (let i = 0; i < loader.length; i++) {
+            loader[i].style.display = 'block';
+        }
 
 
         fetch("https://formsubmit.co/ajax/info@authorseverest.com", {
@@ -63,7 +63,12 @@ const BannerForm = () => {
             })
         })
             .then(function (response) {
-                loader.style.display = 'none';
+                const loader = document.getElementsByClassName('loader');
+
+                for (let i = 0; i < loader.length; i++) {
+                    loader[i].style.display = 'none';
+                }
+
                 const element = document.getElementById('yourElementId');
 
                 if (element) {
