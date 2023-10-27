@@ -46,7 +46,7 @@ const BannerForm = () => {
         }
 
 
-        fetch("https://formsubmit.co/ajax/harry.bruce890@gmail.com", {
+        fetch("https://formsubmit.co/ajax/info@authorseverest.com", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
