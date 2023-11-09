@@ -48,7 +48,7 @@ const GetAQuote = () => {
 
 
 
-        fetch("https://formsubmit.co/ajax/info@authorseverest.com", {
+        fetch("api/email", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

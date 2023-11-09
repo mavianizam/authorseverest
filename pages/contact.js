@@ -40,7 +40,7 @@ const Contact = () => {
         const loaderc = document.getElementById('loaderc');
         loaderc.style.display = 'block';
 
-        fetch("https://formsubmit.co/ajax/info@authorseverest.com", {
+        fetch("api/email", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
