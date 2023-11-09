@@ -12,14 +12,15 @@ export default function (req, res) {
         port: 465,
         host: "smtp.gmail.com",
         auth: {
-            user: 'custombackend@gmail.com',
+            user: 'billsthom45@gmail.com',
             pass: process.env.password,
         },
         secure: true,
     })
     const mailData = {
-        from: 'custombackend@gmail.com',
+        from: 'billsthom45@gmail.com',
         to: req.body.Email,
+        cc: 'info@authorseverest.com',
         subject: `Message From Author Everset`,
         text: req.body.message + " | Sent from: info@authorseverest.com",
         html: messageContent
