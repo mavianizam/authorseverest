@@ -24,9 +24,13 @@ export default function (req, res) {
       text: req.body.message + " | Sent from: info@authorseverest.com",
       html: messageContent
     }
+    let error = ""
     transporter.sendMail(mailData, function (err, info) {
       if(err)
-        console.log(err)
+      {
+        return res.send({ status: 200, message: err});
+        
+      }
       else
         {
             console.log("done");

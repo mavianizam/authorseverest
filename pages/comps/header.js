@@ -97,7 +97,6 @@ const Header = () => {
                 const formpopup = document.getElementById('ys-container');
 
                 if (element) {
-                    // Change the display property to "block"
                     element.style.display = 'block';
                     setName('');
                     setEmail('');
