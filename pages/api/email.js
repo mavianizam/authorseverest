@@ -35,7 +35,7 @@ export default function (req, res) {
             error = info
             console.log("done");
             console.log(info)
-            return res.send({ status: 200, message: 'Hello from Next.js!',  error: err });
+            return res.send({ status: 200, message: 'Hello from Next.js!',  error: info });
 
 
         }
